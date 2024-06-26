@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dict>
+   <!-- Metadata information - date/time created, sources -->
+   <metadata>
+      <product>NI-Sync</product>
+      <comment>Errors for NI-Sync.</comment>
+      <fra>0</fra>
+      <jpn>0</jpn>
+      <eng>1</eng>
+      <deu>0</deu>
+      <chs>0</chs>
+      <kor>0</kor>
+   </metadata>
+   <!--
+  Configuration information.  Includes allowed ranges
+    * Include as many ranges as required.
+    * All error codes will be checked against these ranges and must be in one range.
+  -->
+   <configuration>
+      <range>
+         <!-- Errors -->
+         <minimum>-1074118656</minimum>
+         <maximum>-1074114561</maximum>
+      </range>
+      <range>
+         <!-- Warnings -->
+         <minimum>1073364992</minimum>
+         <maximum>1073369087</maximum>
+      </range>
+      <range>
+         <!-- VISA Errors -->
+         <minimum>-1073807360</minimum>
+         <maximum>-1073803265</maximum>
+      </range>
+      <range>
+        <!-- VISA Warnings-->
+        <minimum>1073676288</minimum>
+        <maximum>1073741823</maximum>
+      </range>
+   </configuration>
+   <![CDATA[
+   <!-- error code entry format:
+    <error>
+      <code category="category" code="code" needsReview="no" symbol="symbol"/>
+      <desc>
+        description
+      </desc>
+    </error>
+
+    code - hex (begin with 0x) or decimal
+    symbol - symbol used in C/C++ files
+    category - currently unused
+    needsreview - does the text in the description need to be reviewed by TechComm
+    description - one or more lines describing the error.  Needs to be inside a CDATA
+                  section.  CDATA tells the XML parser to not do any XML encoding or
+                  decoding.
+   -->]]><!-- This comment intentionally left blank -->
+   <descriptions>
+      <error>
+         <code category="NI-Sync Error" code="1073365052" needsReview="no" symbol="calUncalibrated" altSymbol="CAL_UNCALIBRATED" />
+         <comment> NISYNC_WARN_BASE + 60 </comment>
+         <desc>
+            <![CDATA[This device is not properly calibrated.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="1073365092" needsReview="no" symbol="networkClientInProgress" altSymbol="NETWORK_CLIENT_IN_PROGRESS" />
+         <comment> NISYNC_WARN_BASE + 100 </comment>
+         <desc>
+            <![CDATA[The request has been accepted by the remote device but processing has not been completed. Wait and attempt to query the property again.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="1073676421" needsReview="no" symbol="unknownStatus" altSymbol="UNKNOWN_STATUS" />
+         <comment> VI_WARN_UNKNOWN_STATUS </comment>
+         <desc>
+            <![CDATA[The status code passed to the operation could not be interpreted.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118655" needsReview="no" symbol="invalidDescriptor" altSymbol="INVALID_DESCRIPTOR" />
+         <comment> NISYNC_ERROR_BASE + 1 </comment>
+         <desc>
+            <![CDATA[The specified instrument descriptor is invalid.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118654" needsReview="no" symbol="invalidMode" altSymbol="INVALID_MODE" />
+         <comment> NISYNC_ERROR_BASE + 2 </comment>
+         <desc>
+            <![CDATA[The mode for this operation is invalid.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118653" needsReview="no" symbol="featureNotSupported" altSymbol="FEATURE_NOT_SUPPORTED" />
+         <comment> NISYNC_ERROR_BASE + 3 </comment>
+         <desc>
+            <![CDATA[This operation requires a feature that is not supported.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118652" needsReview="no" symbol="versionMismatch" altSymbol="VERSION_MISMATCH" />
+         <comment> NISYNC_ERROR_BASE + 4 </comment>
+         <desc>
+            <![CDATA[There is a version mismatch.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118651" needsReview="no" symbol="internalSoftware" altSymbol="INTERNAL_SOFTWARE" />
+         <comment> NISYNC_ERROR_BASE + 5 </comment>
+         <desc>
+            <![CDATA[An internal software error occurred.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118650" needsReview="no" symbol="fileIo" altSymbol="FILE_IO" />
+         <comment> NISYNC_ERROR_BASE + 6 </comment>
+         <desc>
+            <![CDATA[An error occurred while reading or writing a file.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118649" needsReview="no" symbol="resetNotSupported" altSymbol="RESET_NOT_SUPPORTED" />
+         <comment> NISYNC_ERROR_BASE + 7 </comment>
+         <desc>
+            <![CDATA[This device does not support Reset.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118648" needsReview="no" symbol="invalidType" altSymbol="INVALID_TYPE" />
+         <comment> NISYNC_ERROR_BASE + 8 </comment>
+         <desc>
+            <![CDATA[A parameter for this operation is of an invalid type.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118647" needsReview="no" symbol="apiSupportIncompatibleWithRuntime" altSymbol="API_SUPPORT_INCOMPATIBLE_WITH_RUNTIME" />
+         <comment> NISYNC_ERROR_BASE + 9 </comment>
+         <desc>
+            <![CDATA[The NI-Sync API Support is unable to communicate with the NI-Sync Runtime. To resolve this issue, install NI-Sync 18.0 or later.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118646" needsReview="no" symbol="driverInitialization" altSymbol="DRIVER_INITIALIZATION" />
+         <comment> NISYNC_ERROR_BASE + 10 </comment>
+         <desc>
+            <![CDATA[An error occurred while initializing the driver.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118645" needsReview="no" symbol="driverTimeout" altSymbol="DRIVER_TIMEOUT" />
+         <comment> NISYNC_ERROR_BASE + 11 </comment>
+         <desc>
+            <![CDATA[The driver timed out while performing an operation.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118636" needsReview="no" symbol="readFailure" altSymbol="READ_FAILURE" />
+         <comment> NISYNC_ERROR_BASE + 20 </comment>
+         <desc>
+            <![CDATA[A failure occurred while reading from the device.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118635" needsReview="no" symbol="writeFailure" altSymbol="WRITE_FAILURE" />
+         <comment> NISYNC_ERROR_BASE + 21 </comment>
+         <desc>
+            <![CDATA[A failure occurred while writing to the device.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118634" needsReview="no" symbol="deviceNotFound" altSymbol="DEVICE_NOT_FOUND" />
+         <comment> NISYNC_ERROR_BASE + 22 </comment>
+         <desc>
+            <![CDATA[The specified device was not found.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118633" needsReview="no" symbol="deviceNotReady" altSymbol="DEVICE_NOT_READY" />
+         <comment> NISYNC_ERROR_BASE + 23 </comment>
+         <desc>
+            <![CDATA[The specified device is not ready.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118632" needsReview="no" symbol="internalHardware" altSymbol="INTERNAL_HARDWARE" />
+         <comment> NISYNC_ERROR_BASE + 24 </comment>
+         <desc>
+            <![CDATA[An internal hardware error occurred.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118631" needsReview="no" symbol="overflow" altSymbol="OVERFLOW" />
+         <comment> NISYNC_ERROR_BASE + 25 </comment>
+         <desc>
+            <![CDATA[An overflow condition occurred.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118630" needsReview="no" symbol="remoteDevice" altSymbol="REMOTE_DEVICE" />
+         <comment> NISYNC_ERROR_BASE + 26 </comment>
+         <desc>
+            <![CDATA[The specified device is a remote device.  Remote devices are not allowed.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118626" needsReview="no" symbol="firmwareLoad" altSymbol="FIRMWARE_LOAD" />
+         <comment> NISYNC_ERROR_BASE + 30 </comment>
+         <desc>
+            <![CDATA[The firmware failed to load.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118625" needsReview="no" symbol="deviceNotInitialized" altSymbol="DEVICE_NOT_INITIALIZED" />
+         <comment> NISYNC_ERROR_BASE + 31 </comment>
+         <desc>
+            <![CDATA[The device is not initialized.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118624" needsReview="no" symbol="clk10NotPresent" altSymbol="CLK10_NOT_PRESENT" />
+         <comment> NISYNC_ERROR_BASE + 32 </comment>
+         <desc>
+            <![CDATA[PXI_Clk10 is not present.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118616" needsReview="no" symbol="pllNotPresent" altSymbol="PLL_NOT_PRESENT" />
+         <comment> NISYNC_ERROR_BASE + 40 </comment>
+         <desc>
+            <![CDATA[This device does not support a PLL.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118615" needsReview="no" symbol="ddsNotPresent" altSymbol="DDS_NOT_PRESENT" />
+         <comment> NISYNC_ERROR_BASE + 41 </comment>
+         <desc>
+            <![CDATA[The device does not support a DDS.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118614" needsReview="no" symbol="ddsAlreadyStarted" altSymbol="DDS_ALREADY_STARTED" />
+         <comment> NISYNC_ERROR_BASE + 42 </comment>
+         <desc>
+            <![CDATA[The specified attribute cannot be set because the DDS is already running.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118613" needsReview="no" symbol="ddsSyncClkComboInvalid" altSymbol="DDS_SYNC_CLK_COMBO_INVALID" />
+         <comment> NISYNC_ERROR_BASE + 43 </comment>
+         <desc>
+            <![CDATA[The current DDS frequency is incompatible as a synchronization clock, either the DDS is off or running too fast.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118606" needsReview="no" symbol="srcTerminalInvalid" altSymbol="SRC_TERMINAL_INVALID" />
+         <comment> NISYNC_ERROR_BASE + 50 </comment>
+         <desc>
+            <![CDATA[The specified source terminal is invalid for this operation.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118605" needsReview="no" symbol="destTerminalInvalid" altSymbol="DEST_TERMINAL_INVALID" />
+         <comment> NISYNC_ERROR_BASE + 51 </comment>
+         <desc>
+            <![CDATA[The specified destination terminal is invalid for this operation.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118604" needsReview="no" symbol="terminalNotConnected" altSymbol="TERMINAL_NOT_CONNECTED" />
+         <comment> NISYNC_ERROR_BASE + 52 </comment>
+         <desc>
+            <![CDATA[The specified terminal is not connected.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118603" needsReview="no" symbol="syncClkInvalid" altSymbol="SYNC_CLK_INVALID" />
+         <comment> NISYNC_ERROR_BASE + 53 </comment>
+         <desc>
+            <![CDATA[The specified synchronization clock is invalid for this operation.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118602" needsReview="no" symbol="terminalInvalid" altSymbol="TERMINAL_INVALID" />
+         <comment> NISYNC_ERROR_BASE + 54 </comment>
+         <desc>
+            <![CDATA[Terminal for the device is invalid.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118601" needsReview="no" symbol="srcTerminalPxiChassisNotIdentified" altSymbol="SRC_TERMINAL_PXI_CHASSIS_NOT_IDENTIFIED" />
+         <comment> NISYNC_ERROR_BASE + 55 </comment>
+         <desc>
+            <![CDATA[Route failed because the PXI chassis is not identified. The existence of the source terminal depends on the chassis being identified. Use the Measurements & Automation Explorer (MAX) to identify your chassis.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118600" needsReview="no" symbol="destTerminalPxiChassisNotIdentified" altSymbol="DEST_TERMINAL_PXI_CHASSIS_NOT_IDENTIFIED" />
+         <comment> NISYNC_ERROR_BASE + 56 </comment>
+         <desc>
+            <![CDATA[Route failed because the PXI chassis is not identified. The existence of the destination terminal depends on the chassis being identified. Use the Measurements & Automation Explorer (MAX) to identify your chassis.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118599" needsReview="no" symbol="srcTerminalPxiStarxNotInSysTimingSlot" altSymbol="SRC_TERMINAL_PXI_STARX_NOT_IN_SYS_TIMING_SLOT" />
+         <comment> NISYNC_ERROR_BASE + 57 </comment>
+         <desc>
+            <![CDATA[PXI_Star<n> is available as a source terminal only for devices in a system timing slot. To use PXI_Star<n>, move your device to a system timing slot.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118598" needsReview="no" symbol="destTerminalPxiStarxNotInSysTimingSlot" altSymbol="DEST_TERMINAL_PXI_STARX_NOT_IN_SYS_TIMING_SLOT" />
+         <comment> NISYNC_ERROR_BASE + 58 </comment>
+         <desc>
+            <![CDATA[PXI_Star<n> is available as a destination terminal only for devices in a system timing slot. To use PXI_Star<n>, move your device to a system timing slot.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118597" needsReview="no" symbol="destTerminalPxiClk10InNotInSysTimingSlot" altSymbol="DEST_TERMINAL_PXI_CLK10_IN_NOT_IN_SYS_TIMING_SLOT" />
+         <comment> NISYNC_ERROR_BASE + 59 </comment>
+         <desc>
+            <![CDATA[PXI_Clk10_In is available as a destination terminal only for devices in a system timing slot. Move your device to a system timing slot.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118596" needsReview="no" symbol="calIncorrectPassword" altSymbol="CAL_INCORRECT_PASSWORD" />
+         <comment> NISYNC_ERROR_BASE + 60 </comment>
+         <desc>
+            <![CDATA[The supplied external calibration password is incorrect.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118595" needsReview="no" symbol="calPasswordTooLarge" altSymbol="CAL_PASSWORD_TOO_LARGE" />
+         <comment> NISYNC_ERROR_BASE + 61 </comment>
+         <desc>
+            <![CDATA[The external calibration password contains too many characters.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118594" needsReview="no" symbol="calNotPermitted" altSymbol="CAL_NOT_PERMITTED" />
+         <comment> NISYNC_ERROR_BASE + 62 </comment>
+         <desc>
+            <![CDATA[The specified calibration operation is not permitted on this session type.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118586" needsReview="no" symbol="rsrcUnavailable" altSymbol="RSRC_UNAVAILABLE" />
+         <comment> NISYNC_ERROR_BASE + 70 </comment>
+         <desc>
+            <![CDATA[A resource necessary to complete the specified operation is not available; therefore, the operation cannot be completed.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118585" needsReview="no" symbol="rsrcReserved" altSymbol="RSRC_RESERVED" />
+         <comment> NISYNC_ERROR_BASE + 71 </comment>
+         <desc>
+            <![CDATA[A resource necessary to complete the specified operation is already reserved by a previous operation and cannot be shared; therefore, the operation cannot be completed.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118584" needsReview="no" symbol="rsrcNotReserved" altSymbol="RSRC_NOT_RESERVED" />
+         <comment> NISYNC_ERROR_BASE + 72 </comment>
+         <desc>
+            <![CDATA[A resource necessary to complete the specified operation is not reserved and should have already been; therefore, the operation cannot be completed]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118583" needsReview="no" symbol="hwBufferFull" altSymbol="HW_BUFFER_FULL" />
+         <comment> NISYNC_ERROR_BASE + 73 </comment>
+         <desc>
+            <![CDATA[A hardware buffer necessary to complete the specified operation is unexpectedly full; therefore, the operation cannot be completed.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118582" needsReview="no" symbol="swBufferFull" altSymbol="SW_BUFFER_FULL" />
+         <comment> NISYNC_ERROR_BASE + 74 </comment>
+         <desc>
+            <![CDATA[A software buffer necessary to complete the specified operation is unexpectedly full; therefore, the operation cannot be completed.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118581" needsReview="no" symbol="socketFailure" altSymbol="SOCKET_FAILURE" />
+         <comment> NISYNC_ERROR_BASE + 75 </comment>
+         <desc>
+            <![CDATA[A network socket necessary to complete the specified operation has generated a failure; therefore, the operation cannot be completed.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118580" needsReview="no" symbol="sessionAborted" altSymbol="SESSION_ABORTED" />
+         <comment> NISYNC_ERROR_BASE + 76 </comment>
+         <desc>
+            <![CDATA[The specified operation cannot be performed because a session has been aborted or a device has been removed from the system. Handle this situation as required by the application and then, if appropriate, attempt to perform the operation again.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118579" needsReview="no" symbol="sessionAborting" altSymbol="SESSION_ABORTING" />
+         <comment> NISYNC_ERROR_BASE + 77 </comment>
+         <desc>
+            <![CDATA[The specified operation cannot be performed because a session is in the process of being aborted or a device is in the process of being removed from the system. Wait until the abort operation is complete, and attempt to perform the operation again.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118578" needsReview="no" symbol="terminalNotSpecified" altSymbol="TERMINAL_NOT_SPECIFIED" />
+         <comment> NISYNC_ERROR_BASE + 78 </comment>
+         <desc>
+            <![CDATA[The specified operation cannot be performed since the Active Item was not specified.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118576" needsReview="no" symbol="timeOverflow" altSymbol="TIME_OVERFLOW" />
+         <comment> NISYNC_ERROR_BASE + 80 </comment>
+         <desc>
+            <![CDATA[A 1588 time value has overflowed.  The resulting value is not accurate.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118575" needsReview="no" symbol="timeTooEarly" altSymbol="TIME_TOO_EARLY" />
+         <comment> NISYNC_ERROR_BASE + 81 </comment>
+         <desc>
+            <![CDATA[The specified time value is too early to be represented as a 1588 time value.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118574" needsReview="no" symbol="timeTooLate" altSymbol="TIME_TOO_LATE" />
+         <comment> NISYNC_ERROR_BASE + 82 </comment>
+         <desc>
+            <![CDATA[The specified time value is too late to be represetned as a 1588 time value.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118573" needsReview="no" symbol="ptpAlreadyStarted" altSymbol="PTP_ALREADY_STARTED" />
+         <comment> NISYNC_ERROR_BASE + 83 </comment>
+         <desc>
+            <![CDATA[The Precision Time Protocol (PTP) has already been started on this device; therefore, it cannot be started again.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118572" needsReview="no" symbol="ptpNotStarted" altSymbol="PTP_NOT_STARTED" />
+         <comment> NISYNC_ERROR_BASE + 84 </comment>
+         <desc>
+            <![CDATA[The Precision Time Protocol (PTP) has not been started on this device; therefore, it cannot be stopped.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118571" needsReview="no" symbol="invalidClockState" altSymbol="INVALID_CLOCK_STATE" />
+         <comment> NISYNC_ERROR_BASE + 85 </comment>
+         <desc>
+            <![CDATA[The specified attribute cannot be set when the Precision Time Protocol (PTP) is in its current state.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118570" needsReview="no" symbol="ipAddress" altSymbol="IP_ADDRESS" />
+         <comment> NISYNC_ERROR_BASE + 86 </comment>
+         <desc>
+            <![CDATA[The IP address for the specified device cannot be determined; therefore, the specified operation cannot be completed.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118569" needsReview="no" symbol="futureTimeEventTooSoon" altSymbol="FUTURE_TIME_EVENT_TOO_SOON" />
+         <comment> NISYNC_ERROR_BASE + 87 </comment>
+         <desc>
+            <![CDATA[The time for the specified future time event is too soon, or may be in the past, and cannot be programmed in the device before it would occur.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118568" needsReview="no" symbol="clockPeriodTooShort" altSymbol="CLOCK_PERIOD_TOO_SHORT" />
+         <comment> NISYNC_ERROR_BASE + 88 </comment>
+         <desc>
+            <![CDATA[A clock with the specified period is too short to be generated by the device.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118567" needsReview="no" symbol="dupFutureTimeEvent" altSymbol="DUP_FUTURE_TIME_EVENT" />
+         <comment> NISYNC_ERROR_BASE + 89 </comment>
+         <desc>
+            <![CDATA[A future time event with the same time and same terminal as the specified future time event has already been created.  Multiple future time events on the same terminal at the same time cannot be created.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118566" needsReview="no" symbol="syncIntervalMismach" altSymbol="SYNC_INTERVAL_MISMACH" />
+         <comment> NISYNC_ERROR_BASE + 90 </comment>
+         <desc>
+            <![CDATA[The specified sync interval for this 1588 clock is different than the sync interval specified for other 1588 clocks participating in the PTP.  Adjust the sync interval on this 1588 clock or the other 1588 clocks participating in the PTP to the same value.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118565" needsReview="no" symbol="invalidInitialTime" altSymbol="INVALID_INITIAL_TIME" />
+         <comment> NISYNC_ERROR_BASE + 91 </comment>
+         <desc>
+            <![CDATA[The specified initial time is invalid.  Initial times must be after 0 hours 1 January 2000 and before 0 hours 1 January 2100.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118564" needsReview="no" symbol="clkAdjTooLarge" altSymbol="CLK_ADJ_TOO_LARGE" />
+         <comment> NISYNC_ERROR_BASE + 92 </comment>
+         <desc>
+            <![CDATA[The specified 1588 clock adjustment offset is too large.  The clock adjustment cannot be more than +1 seconds or less than -1 seconds.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118563" needsReview="no" symbol="clockPeriodTooLarge" altSymbol="CLOCK_PERIOD_TOO_LARGE" />
+         <comment> NISYNC_ERROR_BASE + 93 </comment>
+         <desc>
+            <![CDATA[A clock with the specified period is too large to be generated by the device.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118562" needsReview="no" symbol="networkAdapterNotFound" altSymbol="NETWORK_ADAPTER_NOT_FOUND" />
+         <comment> NISYNC_ERROR_BASE + 94 </comment>
+         <desc>
+            <![CDATA[The network interface associated with the device was not found.  Ensure that the associated NIC (network interface controller) is installed and enabled.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118561" needsReview="no" symbol="noCommonTrigLineForRoute" altSymbol="NO_COMMON_TRIG_LINE_FOR_ROUTE" />
+         <comment> NISYNC_ERROR_BASE + 95 </comment>
+         <desc>
+            <![CDATA[There are no shared trigger lines between the two devices which are acceptable to both devices. Consider routing the signal through the I/O connectors of the two devices, if applicable.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118560" needsReview="no" symbol="timestampDecimationNotSupported" altSymbol="TIMESTAMP_DECIMATION_NOT_SUPPORTED" />
+         <comment> NISYNC_ERROR_BASE + 96 </comment>
+         <desc>
+            <![CDATA[This device does not support timestamp decimation.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118559" needsReview="no" symbol="timestampDecimationCountTooSmall" altSymbol="TIMESTAMP_DECIMATION_COUNT_TOO_SMALL" />
+         <comment> NISYNC_ERROR_BASE + 97 </comment>
+         <desc>
+            <![CDATA[The timestamp decimation count must be greater than 0 for this device.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118558" needsReview="no" symbol="timestampDecimationCountTooLarge" altSymbol="TIMESTAMP_DECIMATION_COUNT_TOO_LARGE" />
+         <comment> NISYNC_ERROR_BASE + 98 </comment>
+         <desc>
+            <![CDATA[The specified timestamp decimation count is too great for this device.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118557" needsReview="no" symbol="futureTimeEventRearmTimeViolation" altSymbol="FUTURE_TIME_EVENT_REARM_TIME_VIOLATION" />
+         <comment> NISYNC_ERROR_BASE + 99 </comment>
+         <desc>
+            <![CDATA[The specified future time event violates the rearm time of the future time event engine.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118556" needsReview="no" symbol="timeSnapped" altSymbol="TIME_SNAPPED" />
+         <comment> NISYNC_ERROR_BASE + 100 </comment>
+         <desc>
+            <![CDATA[Board time was snapped back during measurement.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118555" needsReview="no" symbol="trTypeMismatch" altSymbol="TR_TYPE_MISMATCH" />
+         <comment> NISYNC_ERROR_BASE + 101 </comment>
+         <desc>
+            <![CDATA[The requested property is not supported by the time reference specified on the Active Item.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118554" needsReview="no" symbol="trInstanceNotFound" altSymbol="TR_INSTANCE_NOT_FOUND" />
+         <comment> NISYNC_ERROR_BASE + 102 </comment>
+         <desc>
+            <![CDATA[The requested time reference instance was not found.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118553" needsReview="no" symbol="remoteDeviceReadFailure" altSymbol="REMOTE_DEVICE_READ_FAILURE" />
+         <comment> NISYNC_ERROR_BASE + 103 </comment>
+         <desc>
+            <![CDATA[The data received from the remote device could not be interpreted. Try to perform the operation again.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118552" needsReview="no" symbol="remoteDeviceCommunicationFailure" altSymbol="REMOTE_DEVICE_COMMUNICATION_FAILURE" />
+         <comment> NISYNC_ERROR_BASE + 104 </comment>
+         <desc>
+            <![CDATA[A failure occured while communicating with the remote device. Ensure the remote device is accessible.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118551" needsReview="no" symbol="libLoadFailure" altSymbol="LIB_LOAD_FAILURE" />
+         <comment> NISYNC_ERROR_BASE + 105 </comment>
+         <desc>
+            <![CDATA[Unable to load an internal library. If the error persists contact NI support.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118550" needsReview="no" symbol="invalidResourceNameFormat" altSymbol="INVALID_RESOURCE_NAME_FORMAT" />
+         <comment> NISYNC_ERROR_BASE + 106 </comment>
+         <desc>
+            <![CDATA[The resource name format is invalid.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118549" needsReview="no" symbol="trInstanceAlreadyExists" altSymbol="TR_INSTANCE_ALREADY_EXISTS" />
+         <comment> NISYNC_ERROR_BASE + 107 </comment>
+         <desc>
+            <![CDATA[The specified time reference already exists.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118548" needsReview="no" symbol="remoteDeviceResourceNotFound" altSymbol="REMOTE_DEVICE_RESOURCE_NOT_FOUND" />
+         <comment> NISYNC_ERROR_BASE + 108 </comment>
+         <desc>
+            <![CDATA[Requested resource not found on a remote device. This may be because the device was not reachable or has experienced an internal error. It may also mean you need to update software or firmware on the remote device.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118547" needsReview="no" symbol="conflictingTrInstances" altSymbol="CONFLICTING_TR_INSTANCES" />
+         <comment> NISYNC_ERROR_BASE + 109 </comment>
+         <desc>
+            <![CDATA[The time reference you are trying to enable conflicts with a time reference already running on the same interface. Disable the conflicting time reference and retry the operation.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118546" needsReview="no" symbol="trAttrNotFound" altSymbol="TR_ATTR_NOT_FOUND" />
+         <comment> NISYNC_ERROR_BASE + 110 </comment>
+         <desc>
+            <![CDATA[The requested attribute is not currently available. This may be because the time reference is disabled, not ready, or has encountered an error.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="NI-Sync Error" code="-1074118545" needsReview="no" symbol="communicationsFault" altSymbol="COMMUNICATIONS_FAULT" />
+         <comment> NISYNC_ERROR_BASE + 111 </comment>
+         <desc>
+            <![CDATA[A failure occured while communicating with a required software service running on the device. Restart the device. If the error persists, contact NI support.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="VISA Error" code="-1073807331" needsReview="no" symbol="nsupAttr" altSymbol="NSUP_ATTR" />
+         <comment> VI_ERROR_NSUP_ATTR </comment>
+         <desc>
+            <![CDATA[The specified attribute is not supported.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="VISA Error" code="-1073807330" needsReview="no" symbol="nsupAttrState" altSymbol="NSUP_ATTR_STATE" />
+         <comment> VI_ERROR_NSUP_ATTR_STATE </comment>
+         <desc>
+            <![CDATA[The specified attribute state is not supported.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="VISA Error" code="-1073807329" needsReview="no" symbol="attrReadonly" altSymbol="ATTR_READONLY" />
+         <comment> VI_ERROR_ATTR_READONLY </comment>
+         <desc>
+            <![CDATA[The specified attribute is read-only.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="VISA Error" code="-1073807294" needsReview="no" symbol="destTerminalInUse" altSymbol="DEST_TERMINAL_IN_USE" />
+         <comment> VI_ERROR_LINE_IN_USE </comment>
+         <desc>
+            <![CDATA[The specified destination terminal is in use.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="VISA Error" code="-1073807240" needsReview="no" symbol="invParameter" altSymbol="INV_PARAMETER" />
+         <comment> VI_ERROR_INV_PARAMETER </comment>
+         <desc>
+            <![CDATA[A parameter for this operation is invalid.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="VISA Error" code="-1073807300" needsReview="no" symbol="allocationFailed" altSymbol="ALLOC" />
+         <comment> VI_ERROR_ALLOC </comment>
+         <desc>
+            <![CDATA[Insufficient system resources to perform necessary memory allocation.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="VISA Error" code="-1073807346" needsReview="no" symbol="invalidObject" altSymbol="INV_OBJECT" />
+         <comment> VI_ERROR_INV_OBJECT </comment>
+         <desc>
+            <![CDATA[The given session or object reference is invalid.]]>
+         </desc>
+      </error>
+      <error>
+         <code category="VISA Error" code="-1073807360" needsReview="no" symbol="systemError" altSymbol="SYSTEM_ERROR" />
+         <comment> VI_ERROR_SYSTEM_ERROR </comment>
+         <desc>
+            <![CDATA[Unknown system error (miscellaneous error).]]>
+         </desc>
+      </error>
+   </descriptions>
+</dict>

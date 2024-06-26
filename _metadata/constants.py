@@ -1,0 +1,1607 @@
+# -*- coding: utf-8 -*-
+# This file is code generated, do not make changes here
+#  If the generated information is not correct for python
+#  changes can be made in attributes_addon.py and they will be
+#  applied at build time
+
+constants = {
+    "PXITRIG0": {
+        "value": "PXI_Trig0",
+        "visibility": "public",
+    },
+    "PXITRIG1": {
+        "value": "PXI_Trig1",
+        "visibility": "public",
+    },
+    "PXITRIG2": {
+        "value": "PXI_Trig2",
+        "visibility": "public",
+    },
+    "PXITRIG3": {
+        "value": "PXI_Trig3",
+        "visibility": "public",
+    },
+    "PXITRIG4": {
+        "value": "PXI_Trig4",
+        "visibility": "public",
+    },
+    "PXITRIG5": {
+        "value": "PXI_Trig5",
+        "visibility": "public",
+    },
+    "PXITRIG6": {
+        "value": "PXI_Trig6",
+        "visibility": "public",
+    },
+    "PXITRIG7": {
+        "value": "PXI_Trig7",
+        "visibility": "public",
+    },
+    "PXISTAR0": {
+        "value": "PXI_Star0",
+        "visibility": "public",
+    },
+    "PXISTAR1": {
+        "value": "PXI_Star1",
+        "visibility": "public",
+    },
+    "PXISTAR2": {
+        "value": "PXI_Star2",
+        "visibility": "public",
+    },
+    "PXISTAR3": {
+        "value": "PXI_Star3",
+        "visibility": "public",
+    },
+    "PXISTAR4": {
+        "value": "PXI_Star4",
+        "visibility": "public",
+    },
+    "PXISTAR5": {
+        "value": "PXI_Star5",
+        "visibility": "public",
+    },
+    "PXISTAR6": {
+        "value": "PXI_Star6",
+        "visibility": "public",
+    },
+    "PXISTAR7": {
+        "value": "PXI_Star7",
+        "visibility": "public",
+    },
+    "PXISTAR8": {
+        "value": "PXI_Star8",
+        "visibility": "public",
+    },
+    "PXISTAR9": {
+        "value": "PXI_Star9",
+        "visibility": "public",
+    },
+    "PXISTAR10": {
+        "value": "PXI_Star10",
+        "visibility": "public",
+    },
+    "PXISTAR11": {
+        "value": "PXI_Star11",
+        "visibility": "public",
+    },
+    "PXISTAR12": {
+        "value": "PXI_Star12",
+        "visibility": "public",
+    },
+    "PXISTAR13": {
+        "value": "PXI_Star13",
+        "visibility": "public",
+    },
+    "PXISTAR14": {
+        "value": "PXI_Star14",
+        "visibility": "public",
+    },
+    "PXISTAR15": {
+        "value": "PXI_Star15",
+        "visibility": "public",
+    },
+    "PXISTAR16": {
+        "value": "PXI_Star16",
+        "visibility": "public",
+    },
+    "PXISTAR": {
+        "value": "PXI_Star",
+        "visibility": "public",
+    },
+    "PXIEDSTARA0": {
+        "value": "PXIe_DStarA0",
+        "visibility": "public",
+    },
+    "PXIEDSTARA1": {
+        "value": "PXIe_DStarA1",
+        "visibility": "public",
+    },
+    "PXIEDSTARA2": {
+        "value": "PXIe_DStarA2",
+        "visibility": "public",
+    },
+    "PXIEDSTARA3": {
+        "value": "PXIe_DStarA3",
+        "visibility": "public",
+    },
+    "PXIEDSTARA4": {
+        "value": "PXIe_DStarA4",
+        "visibility": "public",
+    },
+    "PXIEDSTARA5": {
+        "value": "PXIe_DStarA5",
+        "visibility": "public",
+    },
+    "PXIEDSTARA6": {
+        "value": "PXIe_DStarA6",
+        "visibility": "public",
+    },
+    "PXIEDSTARA7": {
+        "value": "PXIe_DStarA7",
+        "visibility": "public",
+    },
+    "PXIEDSTARA8": {
+        "value": "PXIe_DStarA8",
+        "visibility": "public",
+    },
+    "PXIEDSTARA9": {
+        "value": "PXIe_DStarA9",
+        "visibility": "public",
+    },
+    "PXIEDSTARA10": {
+        "value": "PXIe_DStarA10",
+        "visibility": "public",
+    },
+    "PXIEDSTARA11": {
+        "value": "PXIe_DStarA11",
+        "visibility": "public",
+    },
+    "PXIEDSTARA12": {
+        "value": "PXIe_DStarA12",
+        "visibility": "public",
+    },
+    "PXIEDSTARA13": {
+        "value": "PXIe_DStarA13",
+        "visibility": "public",
+    },
+    "PXIEDSTARA14": {
+        "value": "PXIe_DStarA14",
+        "visibility": "public",
+    },
+    "PXIEDSTARA15": {
+        "value": "PXIe_DStarA15",
+        "visibility": "public",
+    },
+    "PXIEDSTARA16": {
+        "value": "PXIe_DStarA16",
+        "visibility": "public",
+    },
+    "PXIEDSTARA": {
+        "value": "PXIe_DStarA",
+        "visibility": "public",
+    },
+    "PXIEDSTARB0": {
+        "value": "PXIe_DStarB0",
+        "visibility": "public",
+    },
+    "PXIEDSTARB1": {
+        "value": "PXIe_DStarB1",
+        "visibility": "public",
+    },
+    "PXIEDSTARB2": {
+        "value": "PXIe_DStarB2",
+        "visibility": "public",
+    },
+    "PXIEDSTARB3": {
+        "value": "PXIe_DStarB3",
+        "visibility": "public",
+    },
+    "PXIEDSTARB4": {
+        "value": "PXIe_DStarB4",
+        "visibility": "public",
+    },
+    "PXIEDSTARB5": {
+        "value": "PXIe_DStarB5",
+        "visibility": "public",
+    },
+    "PXIEDSTARB6": {
+        "value": "PXIe_DStarB6",
+        "visibility": "public",
+    },
+    "PXIEDSTARB7": {
+        "value": "PXIe_DStarB7",
+        "visibility": "public",
+    },
+    "PXIEDSTARB8": {
+        "value": "PXIe_DStarB8",
+        "visibility": "public",
+    },
+    "PXIEDSTARB9": {
+        "value": "PXIe_DStarB9",
+        "visibility": "public",
+    },
+    "PXIEDSTARB10": {
+        "value": "PXIe_DStarB10",
+        "visibility": "public",
+    },
+    "PXIEDSTARB11": {
+        "value": "PXIe_DStarB11",
+        "visibility": "public",
+    },
+    "PXIEDSTARB12": {
+        "value": "PXIe_DStarB12",
+        "visibility": "public",
+    },
+    "PXIEDSTARB13": {
+        "value": "PXIe_DStarB13",
+        "visibility": "public",
+    },
+    "PXIEDSTARB14": {
+        "value": "PXIe_DStarB14",
+        "visibility": "public",
+    },
+    "PXIEDSTARB15": {
+        "value": "PXIe_DStarB15",
+        "visibility": "public",
+    },
+    "PXIEDSTARB16": {
+        "value": "PXIe_DStarB16",
+        "visibility": "public",
+    },
+    "PXIEDSTARB": {
+        "value": "PXIe_DStarB",
+        "visibility": "public",
+    },
+    "PXIEDSTARC0": {
+        "value": "PXIe_DStarC0",
+        "visibility": "public",
+    },
+    "PXIEDSTARC1": {
+        "value": "PXIe_DStarC1",
+        "visibility": "public",
+    },
+    "PXIEDSTARC2": {
+        "value": "PXIe_DStarC2",
+        "visibility": "public",
+    },
+    "PXIEDSTARC3": {
+        "value": "PXIe_DStarC3",
+        "visibility": "public",
+    },
+    "PXIEDSTARC4": {
+        "value": "PXIe_DStarC4",
+        "visibility": "public",
+    },
+    "PXIEDSTARC5": {
+        "value": "PXIe_DStarC5",
+        "visibility": "public",
+    },
+    "PXIEDSTARC6": {
+        "value": "PXIe_DStarC6",
+        "visibility": "public",
+    },
+    "PXIEDSTARC7": {
+        "value": "PXIe_DStarC7",
+        "visibility": "public",
+    },
+    "PXIEDSTARC8": {
+        "value": "PXIe_DStarC8",
+        "visibility": "public",
+    },
+    "PXIEDSTARC9": {
+        "value": "PXIe_DStarC9",
+        "visibility": "public",
+    },
+    "PXIEDSTARC10": {
+        "value": "PXIe_DStarC10",
+        "visibility": "public",
+    },
+    "PXIEDSTARC11": {
+        "value": "PXIe_DStarC11",
+        "visibility": "public",
+    },
+    "PXIEDSTARC12": {
+        "value": "PXIe_DStarC12",
+        "visibility": "public",
+    },
+    "PXIEDSTARC13": {
+        "value": "PXIe_DStarC13",
+        "visibility": "public",
+    },
+    "PXIEDSTARC14": {
+        "value": "PXIe_DStarC14",
+        "visibility": "public",
+    },
+    "PXIEDSTARC15": {
+        "value": "PXIe_DStarC15",
+        "visibility": "public",
+    },
+    "PXIEDSTARC16": {
+        "value": "PXIe_DStarC16",
+        "visibility": "public",
+    },
+    "PXIEDSTARC": {
+        "value": "PXIe_DStarC",
+        "visibility": "public",
+    },
+    "PFILVDS0": {
+        "value": "PFI_LVDS0",
+        "visibility": "public",
+    },
+    "PFILVDS1": {
+        "value": "PFI_LVDS1",
+        "visibility": "public",
+    },
+    "PFILVDS2": {
+        "value": "PFI_LVDS2",
+        "visibility": "public",
+    },
+    "PFI0": {
+        "value": "PFI0",
+        "visibility": "public",
+    },
+    "PFI1": {
+        "value": "PFI1",
+        "visibility": "public",
+    },
+    "PFI2": {
+        "value": "PFI2",
+        "visibility": "public",
+    },
+    "PFI3": {
+        "value": "PFI3",
+        "visibility": "public",
+    },
+    "PFI4": {
+        "value": "PFI4",
+        "visibility": "public",
+    },
+    "PFI5": {
+        "value": "PFI5",
+        "visibility": "public",
+    },
+    "GND": {
+        "value": "Ground",
+        "visibility": "public",
+    },
+    "SYNC_CLK_FULLSPEED": {
+        "value": "SyncClkFullSpeed",
+        "visibility": "public",
+    },
+    "SYNC_CLK_DIV1": {
+        "value": "SyncClkDivided1",
+        "visibility": "public",
+    },
+    "SYNC_CLK_DIV2": {
+        "value": "SyncClkDivided2",
+        "visibility": "public",
+    },
+    "SYNC_CLK_ASYNC": {
+        "value": "SyncClkAsync",
+        "visibility": "public",
+    },
+    "SWTRIG_GLOBAL": {
+        "value": "GlobalSoftwareTrigger",
+        "visibility": "public",
+    },
+    "CLK10": {
+        "value": "PXI_Clk10",
+        "visibility": "public",
+    },
+    "CLK10_IN": {
+        "value": "PXI_Clk10_In",
+        "visibility": "public",
+    },
+    "CLKIN": {
+        "value": "ClkIn",
+        "visibility": "public",
+    },
+    "CLKOUT": {
+        "value": "ClkOut",
+        "visibility": "public",
+    },
+    "OSCILLATOR": {
+        "value": "Oscillator",
+        "visibility": "public",
+    },
+    "DDS": {
+        "value": "DDS",
+        "visibility": "public",
+    },
+    "CLK100": {
+        "value": "PXIe_Clk100",
+        "visibility": "public",
+    },
+    "ALL_CONNECTED": {
+        "value": "AllConnected",
+        "visibility": "public",
+    },
+    "DONT_INVERT": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "INVERT": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "UPDATE_EDGE_RISING": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "UPDATE_EDGE_FALLING": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "DDS_UPDATE_IMMEDIATE": {
+        "value": "DDS_UpdateImmediate",
+        "visibility": "public",
+    },
+    "RTSI0": {
+        "value": "RTSI0",
+        "visibility": "public",
+    },
+    "RTSI1": {
+        "value": "RTSI1",
+        "visibility": "public",
+    },
+    "RTSI2": {
+        "value": "RTSI2",
+        "visibility": "public",
+    },
+    "RTSI3": {
+        "value": "RTSI3",
+        "visibility": "public",
+    },
+    "RTSI4": {
+        "value": "RTSI4",
+        "visibility": "public",
+    },
+    "RTSI5": {
+        "value": "RTSI5",
+        "visibility": "public",
+    },
+    "RTSI6": {
+        "value": "RTSI6",
+        "visibility": "public",
+    },
+    "RTSI7": {
+        "value": "RTSI7",
+        "visibility": "public",
+    },
+    "BOARD_CLK": {
+        "value": "BoardClk",
+        "visibility": "public",
+    },
+    "INIT_TIME_SRC_SYSTEM_CLK": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "INIT_TIME_SRC_MANUAL": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "LEVEL_LOW": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "LEVEL_HIGH": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "EDGE_RISING": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "EDGE_FALLING": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "EDGE_ANY": {
+        "value": 2,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_NOT_DEFINED": {
+        "value": -1,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_INIT": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_FAULT": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_DISABLE": {
+        "value": 2,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_LISTENING": {
+        "value": 3,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_PREMASTER": {
+        "value": 4,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_MASTER": {
+        "value": 5,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_PASSIVE": {
+        "value": 6,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_UNCALIBRATED": {
+        "value": 7,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_SLAVE": {
+        "value": 8,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_STATE_STOPPED": {
+        "value": 9,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_CLASS_DEFAULT": {
+        "value": 248,
+        "visibility": "public",
+    },
+    "SYNC_INTERVAL_125_MSEC": {
+        "value": -3,
+        "visibility": "public",
+    },
+    "SYNC_INTERVAL_250_MSEC": {
+        "value": -2,
+        "visibility": "public",
+    },
+    "SYNC_INTERVAL_HALF_SEC": {
+        "value": -1,
+        "visibility": "public",
+    },
+    "SYNC_INTERVAL_ONE_SEC": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "SYNC_INTERVAL_TWO_SEC": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_UNKNOWN": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_25_NSEC": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_100_NSEC": {
+        "value": 2,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_250_NSEC": {
+        "value": 3,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_1_USEC": {
+        "value": 4,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_2500_NSEC": {
+        "value": 5,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_10_USEC": {
+        "value": 6,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_25_USEC": {
+        "value": 7,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_100_USEC": {
+        "value": 8,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_250_USEC": {
+        "value": 9,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_1_MSEC": {
+        "value": 10,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_2500_USEC": {
+        "value": 11,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_10_MSEC": {
+        "value": 12,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_25_MSEC": {
+        "value": 13,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_100_MSEC": {
+        "value": 14,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_250_MSEC": {
+        "value": 15,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_1_SEC": {
+        "value": 16,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_WITHIN_10_SEC": {
+        "value": 17,
+        "visibility": "public",
+    },
+    "IEEE_1588_CLK_ACCURACY_GREATER_THAN_10_SEC": {
+        "value": 18,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_UNKNOWN": {
+        "value": 254,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_25_NSEC": {
+        "value": 32,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_100_NSEC": {
+        "value": 33,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_250_NSEC": {
+        "value": 34,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_1_USEC": {
+        "value": 35,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_2500_NSEC": {
+        "value": 36,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_10_USEC": {
+        "value": 37,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_25_USEC": {
+        "value": 38,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_100_USEC": {
+        "value": 39,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_250_USEC": {
+        "value": 40,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_1_MSEC": {
+        "value": 41,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_2500_USEC": {
+        "value": 42,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_10_MSEC": {
+        "value": 43,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_25_MSEC": {
+        "value": 44,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_100_MSEC": {
+        "value": 45,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_250_MSEC": {
+        "value": 46,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_1_SEC": {
+        "value": 47,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_WITHIN_10_SEC": {
+        "value": 48,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_CLK_ACCURACY_GREATER_THAN_10_SEC": {
+        "value": 49,
+        "visibility": "public",
+    },
+    "IRIG_TYPE_IRIGB_DC": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "IRIG_TYPE_IRIGB_AM": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "GPS_UNINITIALIZED": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "GPS_ANTENNA_ERROR": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "GPS_NO_USEABLE_SATELLITE": {
+        "value": 2,
+        "visibility": "public",
+    },
+    "GPS_ONE_USEABLE_SATELLITE": {
+        "value": 3,
+        "visibility": "public",
+    },
+    "GPS_TWO_USEABLE_SATELLITES": {
+        "value": 4,
+        "visibility": "public",
+    },
+    "GPS_THREE_USEABLE_SATELLITES": {
+        "value": 5,
+        "visibility": "public",
+    },
+    "GPS_NO_GPS_TIME": {
+        "value": 6,
+        "visibility": "public",
+    },
+    "GPS_PDOP_TOO_HIGH": {
+        "value": 7,
+        "visibility": "public",
+    },
+    "GPS_UNUSABLE_SATELLITE": {
+        "value": 8,
+        "visibility": "public",
+    },
+    "GPS_FIX_REJECTED": {
+        "value": 9,
+        "visibility": "public",
+    },
+    "GPS_SELF_SURVEY_COMPLETE": {
+        "value": 10,
+        "visibility": "public",
+    },
+    "GPS_SELF_SURVEY_NOT_COMPLETE": {
+        "value": 11,
+        "visibility": "public",
+    },
+    "TIMEREF_GPS": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "TIMEREF_IRIG": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "TIMEREF_PPS": {
+        "value": 2,
+        "visibility": "public",
+    },
+    "TIMEREF_IEEE_1588_ORDINARY_CLOCK": {
+        "value": 3,
+        "visibility": "public",
+    },
+    "TIMEREF_FREERUNNING": {
+        "value": 4,
+        "visibility": "public",
+    },
+    "TIMEREF_IEEE_8021AS": {
+        "value": 5,
+        "visibility": "public",
+    },
+    "BMCA_MODE_SLAVE_ONLY": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "BMCA_MODE_MASTER_SLAVE": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_PORT_STATE_DISABLED": {
+        "value": 3,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_PORT_STATE_MASTER": {
+        "value": 6,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_PORT_STATE_PASSIVE": {
+        "value": 7,
+        "visibility": "public",
+    },
+    "IEEE_8021AS_PORT_STATE_SLAVE": {
+        "value": 9,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_UNKNOWN": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_ATOMIC_CLOCK": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_GPS": {
+        "value": 2,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_TERRESTRIAL_RADIO": {
+        "value": 3,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_PTP": {
+        "value": 4,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_NTP": {
+        "value": 5,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_HAND_SET": {
+        "value": 6,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_OTHER": {
+        "value": 7,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_INTERNAL_OSCILLATOR": {
+        "value": 8,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_ALTERNATE_PTP": {
+        "value": 9,
+        "visibility": "public",
+    },
+    "IEEE_1588_TIME_SOURCE_RESERVED": {
+        "value": 10,
+        "visibility": "public",
+    },
+    "EXT_CAL_ABORT": {
+        "value": 0,
+        "visibility": "public",
+    },
+    "EXT_CAL_COMMIT": {
+        "value": 1,
+        "visibility": "public",
+    },
+    "GPS_UNUSEABLE_SATELLITE": {
+        "value": 8,
+        "visibility": "public",
+    },
+}
+
+error_codes = [
+    {
+        "alt_symbol": "CAL_UNCALIBRATED",
+        "py_symbol": "UNCALIBRATED",
+        "code": 1073365052,
+        "comment": "NISYNC_WARN_BASE + 60",
+        "symbol": "calUncalibrated",
+        "message": "This device is not properly calibrated.",
+    },
+    {
+        "alt_symbol": "NETWORK_CLIENT_IN_PROGRESS",
+        "py_symbol": "NETWORK_CLIENT_IN_PROGRESS",
+        "code": 1073365092,
+        "comment": "NISYNC_WARN_BASE + 100",
+        "symbol": "networkClientInProgress",
+        "message": "The request has been accepted by the remote device but processing has not been completed. Wait and attempt to query the property again.",
+    },
+    {
+        "alt_symbol": "UNKNOWN_STATUS",
+        "py_symbol": "UNKNOWN_STATUS",
+        "code": 1073676421,
+        "comment": "VI_WARN_UNKNOWN_STATUS",
+        "symbol": "unknownStatus",
+        "message": "The status code passed to the operation could not be interpreted.",
+    },
+    {
+        "alt_symbol": "INVALID_DESCRIPTOR",
+        "py_symbol": "DESCRIPTOR_INVALID",
+        "code": -1074118655,
+        "comment": "NISYNC_ERROR_BASE + 1",
+        "symbol": "invalidDescriptor",
+        "message": "The specified instrument descriptor is invalid.",
+    },
+    {
+        "alt_symbol": "INVALID_MODE",
+        "py_symbol": "MODE_INVALID",
+        "code": -1074118654,
+        "comment": "NISYNC_ERROR_BASE + 2",
+        "symbol": "invalidMode",
+        "message": "The mode for this operation is invalid.",
+    },
+    {
+        "alt_symbol": "FEATURE_NOT_SUPPORTED",
+        "py_symbol": "FEATURE_NOT_SUPPORTED",
+        "code": -1074118653,
+        "comment": "NISYNC_ERROR_BASE + 3",
+        "symbol": "featureNotSupported",
+        "message": "This operation requires a feature that is not supported.",
+    },
+    {
+        "alt_symbol": "VERSION_MISMATCH",
+        "py_symbol": "VERSION_MISMATCH",
+        "code": -1074118652,
+        "comment": "NISYNC_ERROR_BASE + 4",
+        "symbol": "versionMismatch",
+        "message": "There is a version mismatch.",
+    },
+    {
+        "alt_symbol": "INTERNAL_SOFTWARE",
+        "py_symbol": "INTERNAL_SOFTWARE",
+        "code": -1074118651,
+        "comment": "NISYNC_ERROR_BASE + 5",
+        "symbol": "internalSoftware",
+        "message": "An internal software error occurred.",
+    },
+    {
+        "alt_symbol": "FILE_IO",
+        "py_symbol": "FILE_IO",
+        "code": -1074118650,
+        "comment": "NISYNC_ERROR_BASE + 6",
+        "symbol": "fileIo",
+        "message": "An error occurred while reading or writing a file.",
+    },
+    {
+        "alt_symbol": "RESET_NOT_SUPPORTED",
+        "py_symbol": "RESET_NOT_SUPPORTED",
+        "code": -1074118649,
+        "comment": "NISYNC_ERROR_BASE + 7",
+        "symbol": "resetNotSupported",
+        "message": "This device does not support Reset.",
+    },
+    {
+        "alt_symbol": "INVALID_TYPE",
+        "py_symbol": "TYPE_INVALID",
+        "code": -1074118648,
+        "comment": "NISYNC_ERROR_BASE + 8",
+        "symbol": "invalidType",
+        "message": "A parameter for this operation is of an invalid type.",
+    },
+    {
+        "alt_symbol": "API_SUPPORT_INCOMPATIBLE_WITH_RUNTIME",
+        "py_symbol": "API_SUPPORT_INCOMPATIBLE_WITH_RUNTIME",
+        "code": -1074118647,
+        "comment": "NISYNC_ERROR_BASE + 9",
+        "symbol": "apiSupportIncompatibleWithRuntime",
+        "message": "The NI-Sync API Support is unable to communicate with the NI-Sync Runtime. To resolve this issue, install NI-Sync 18.0 or later.",
+    },
+    {
+        "alt_symbol": "DRIVER_INITIALIZATION",
+        "py_symbol": "DRIVER_INITIALIZATION",
+        "code": -1074118646,
+        "comment": "NISYNC_ERROR_BASE + 10",
+        "symbol": "driverInitialization",
+        "message": "An error occurred while initializing the driver.",
+    },
+    {
+        "alt_symbol": "DRIVER_TIMEOUT",
+        "py_symbol": "DRIVER_TIMEOUT",
+        "code": -1074118645,
+        "comment": "NISYNC_ERROR_BASE + 11",
+        "symbol": "driverTimeout",
+        "message": "The driver timed out while performing an operation.",
+    },
+    {
+        "alt_symbol": "READ_FAILURE",
+        "py_symbol": "READ_FAILED",
+        "code": -1074118636,
+        "comment": "NISYNC_ERROR_BASE + 20",
+        "symbol": "readFailure",
+        "message": "A failure occurred while reading from the device.",
+    },
+    {
+        "alt_symbol": "WRITE_FAILURE",
+        "py_symbol": "WRITE_FAILED",
+        "code": -1074118635,
+        "comment": "NISYNC_ERROR_BASE + 21",
+        "symbol": "writeFailure",
+        "message": "A failure occurred while writing to the device.",
+    },
+    {
+        "alt_symbol": "DEVICE_NOT_FOUND",
+        "py_symbol": "DEVICE_NOT_FOUND",
+        "code": -1074118634,
+        "comment": "NISYNC_ERROR_BASE + 22",
+        "symbol": "deviceNotFound",
+        "message": "The specified device was not found.",
+    },
+    {
+        "alt_symbol": "DEVICE_NOT_READY",
+        "py_symbol": "DEVICE_NOT_READY",
+        "code": -1074118633,
+        "comment": "NISYNC_ERROR_BASE + 23",
+        "symbol": "deviceNotReady",
+        "message": "The specified device is not ready.",
+    },
+    {
+        "alt_symbol": "INTERNAL_HARDWARE",
+        "py_symbol": "INTERNAL_HARDWARE",
+        "code": -1074118632,
+        "comment": "NISYNC_ERROR_BASE + 24",
+        "symbol": "internalHardware",
+        "message": "An internal hardware error occurred.",
+    },
+    {
+        "alt_symbol": "OVERFLOW",
+        "py_symbol": "OVERFLOW",
+        "code": -1074118631,
+        "comment": "NISYNC_ERROR_BASE + 25",
+        "symbol": "overflow",
+        "message": "An overflow condition occurred.",
+    },
+    {
+        "alt_symbol": "REMOTE_DEVICE",
+        "py_symbol": "REMOTE_DEVICE",
+        "code": -1074118630,
+        "comment": "NISYNC_ERROR_BASE + 26",
+        "symbol": "remoteDevice",
+        "message": "The specified device is a remote device.  Remote devices are not allowed.",
+    },
+    {
+        "alt_symbol": "FIRMWARE_LOAD",
+        "py_symbol": "FIRMWARE_LOAD",
+        "code": -1074118626,
+        "comment": "NISYNC_ERROR_BASE + 30",
+        "symbol": "firmwareLoad",
+        "message": "The firmware failed to load.",
+    },
+    {
+        "alt_symbol": "DEVICE_NOT_INITIALIZED",
+        "py_symbol": "DEVICE_NOT_INITIALIZED",
+        "code": -1074118625,
+        "comment": "NISYNC_ERROR_BASE + 31",
+        "symbol": "deviceNotInitialized",
+        "message": "The device is not initialized.",
+    },
+    {
+        "alt_symbol": "CLK10_NOT_PRESENT",
+        "py_symbol": "CLK10_NOT_PRESENT",
+        "code": -1074118624,
+        "comment": "NISYNC_ERROR_BASE + 32",
+        "symbol": "clk10NotPresent",
+        "message": "PXI_Clk10 is not present.",
+    },
+    {
+        "alt_symbol": "PLL_NOT_PRESENT",
+        "py_symbol": "PLL_NOT_PRESENT",
+        "code": -1074118616,
+        "comment": "NISYNC_ERROR_BASE + 40",
+        "symbol": "pllNotPresent",
+        "message": "This device does not support a PLL.",
+    },
+    {
+        "alt_symbol": "DDS_NOT_PRESENT",
+        "py_symbol": "DDS_NOT_PRESENT",
+        "code": -1074118615,
+        "comment": "NISYNC_ERROR_BASE + 41",
+        "symbol": "ddsNotPresent",
+        "message": "The device does not support a DDS.",
+    },
+    {
+        "alt_symbol": "DDS_ALREADY_STARTED",
+        "py_symbol": "DDS_ALREADY_STARTED",
+        "code": -1074118614,
+        "comment": "NISYNC_ERROR_BASE + 42",
+        "symbol": "ddsAlreadyStarted",
+        "message": "The specified attribute cannot be set because the DDS is already running.",
+    },
+    {
+        "alt_symbol": "DDS_SYNC_CLK_COMBO_INVALID",
+        "py_symbol": "DDS_SYNC_CLOCK_COMBO_INVALID",
+        "code": -1074118613,
+        "comment": "NISYNC_ERROR_BASE + 43",
+        "symbol": "ddsSyncClkComboInvalid",
+        "message": "The current DDS frequency is incompatible as a synchronization clock, either the DDS is off or running too fast.",
+    },
+    {
+        "alt_symbol": "SRC_TERMINAL_INVALID",
+        "py_symbol": "SOURCE_TERMINAL_INVALID",
+        "code": -1074118606,
+        "comment": "NISYNC_ERROR_BASE + 50",
+        "symbol": "srcTerminalInvalid",
+        "message": "The specified source terminal is invalid for this operation.",
+    },
+    {
+        "alt_symbol": "DEST_TERMINAL_INVALID",
+        "py_symbol": "DESTINATION_TERMINAL_INVALID",
+        "code": -1074118605,
+        "comment": "NISYNC_ERROR_BASE + 51",
+        "symbol": "destTerminalInvalid",
+        "message": "The specified destination terminal is invalid for this operation.",
+    },
+    {
+        "alt_symbol": "TERMINAL_NOT_CONNECTED",
+        "py_symbol": "TERMINAL_NOT_CONNECTED",
+        "code": -1074118604,
+        "comment": "NISYNC_ERROR_BASE + 52",
+        "symbol": "terminalNotConnected",
+        "message": "The specified terminal is not connected.",
+    },
+    {
+        "alt_symbol": "SYNC_CLK_INVALID",
+        "py_symbol": "SYNC_CLOCK_INVALID",
+        "code": -1074118603,
+        "comment": "NISYNC_ERROR_BASE + 53",
+        "symbol": "syncClkInvalid",
+        "message": "The specified synchronization clock is invalid for this operation.",
+    },
+    {
+        "alt_symbol": "TERMINAL_INVALID",
+        "py_symbol": "TERMINAL_INVALID",
+        "code": -1074118602,
+        "comment": "NISYNC_ERROR_BASE + 54",
+        "symbol": "terminalInvalid",
+        "message": "Terminal for the device is invalid.",
+    },
+    {
+        "alt_symbol": "SRC_TERMINAL_PXI_CHASSIS_NOT_IDENTIFIED",
+        "py_symbol": "SOURCE_TERMINAL_PXI_CHASSIS_NOT_IDENTIFIED",
+        "code": -1074118601,
+        "comment": "NISYNC_ERROR_BASE + 55",
+        "symbol": "srcTerminalPxiChassisNotIdentified",
+        "message": "Route failed because the PXI chassis is not identified. The existence of the source terminal depends on the chassis being identified. Use the Measurements & Automation Explorer (MAX) to identify your chassis.",
+    },
+    {
+        "alt_symbol": "DEST_TERMINAL_PXI_CHASSIS_NOT_IDENTIFIED",
+        "py_symbol": "DESTINATION_TERMINAL_PXI_CHASSIS_NOT_IDENTIFIED",
+        "code": -1074118600,
+        "comment": "NISYNC_ERROR_BASE + 56",
+        "symbol": "destTerminalPxiChassisNotIdentified",
+        "message": "Route failed because the PXI chassis is not identified. The existence of the destination terminal depends on the chassis being identified. Use the Measurements & Automation Explorer (MAX) to identify your chassis.",
+    },
+    {
+        "alt_symbol": "SRC_TERMINAL_PXI_STARX_NOT_IN_SYS_TIMING_SLOT",
+        "py_symbol": "SOURCE_TERMINAL_PXI_STARX_NOT_IN_SYS_TIMING_SLOT",
+        "code": -1074118599,
+        "comment": "NISYNC_ERROR_BASE + 57",
+        "symbol": "srcTerminalPxiStarxNotInSysTimingSlot",
+        "message": "PXI_Star<n> is available as a source terminal only for devices in a system timing slot. To use PXI_Star<n>, move your device to a system timing slot.",
+    },
+    {
+        "alt_symbol": "DEST_TERMINAL_PXI_STARX_NOT_IN_SYS_TIMING_SLOT",
+        "py_symbol": "DESTINATION_TERMINAL_PXI_STARX_NOT_IN_SYS_TIMING_SLOT",
+        "code": -1074118598,
+        "comment": "NISYNC_ERROR_BASE + 58",
+        "symbol": "destTerminalPxiStarxNotInSysTimingSlot",
+        "message": "PXI_Star<n> is available as a destination terminal only for devices in a system timing slot. To use PXI_Star<n>, move your device to a system timing slot.",
+    },
+    {
+        "alt_symbol": "DEST_TERMINAL_PXI_CLK10_IN_NOT_IN_SYS_TIMING_SLOT",
+        "py_symbol": "DESTINATION_TERMINAL_PXI_CLK10_IN_NOT_IN_SYS_TIMING_SLOT",
+        "code": -1074118597,
+        "comment": "NISYNC_ERROR_BASE + 59",
+        "symbol": "destTerminalPxiClk10InNotInSysTimingSlot",
+        "message": "PXI_Clk10_In is available as a destination terminal only for devices in a system timing slot. Move your device to a system timing slot.",
+    },
+    {
+        "alt_symbol": "CAL_INCORRECT_PASSWORD",
+        "py_symbol": "INCORRECT_PASSWORD",
+        "code": -1074118596,
+        "comment": "NISYNC_ERROR_BASE + 60",
+        "symbol": "calIncorrectPassword",
+        "message": "The supplied external calibration password is incorrect.",
+    },
+    {
+        "alt_symbol": "CAL_PASSWORD_TOO_LARGE",
+        "py_symbol": "PASSWORD_TOO_LARGE",
+        "code": -1074118595,
+        "comment": "NISYNC_ERROR_BASE + 61",
+        "symbol": "calPasswordTooLarge",
+        "message": "The external calibration password contains too many characters.",
+    },
+    {
+        "alt_symbol": "CAL_NOT_PERMITTED",
+        "py_symbol": "NOT_PERMITTED",
+        "code": -1074118594,
+        "comment": "NISYNC_ERROR_BASE + 62",
+        "symbol": "calNotPermitted",
+        "message": "The specified calibration operation is not permitted on this session type.",
+    },
+    {
+        "alt_symbol": "RSRC_UNAVAILABLE",
+        "py_symbol": "RESOURCE_UNAVAILABLE",
+        "code": -1074118586,
+        "comment": "NISYNC_ERROR_BASE + 70",
+        "symbol": "rsrcUnavailable",
+        "message": "A resource necessary to complete the specified operation is not available; therefore, the operation cannot be completed.",
+    },
+    {
+        "alt_symbol": "RSRC_RESERVED",
+        "py_symbol": "RESOURCE_RESERVED",
+        "code": -1074118585,
+        "comment": "NISYNC_ERROR_BASE + 71",
+        "symbol": "rsrcReserved",
+        "message": "A resource necessary to complete the specified operation is already reserved by a previous operation and cannot be shared; therefore, the operation cannot be completed.",
+    },
+    {
+        "alt_symbol": "RSRC_NOT_RESERVED",
+        "py_symbol": "RESOURCE_NOT_RESERVED",
+        "code": -1074118584,
+        "comment": "NISYNC_ERROR_BASE + 72",
+        "symbol": "rsrcNotReserved",
+        "message": "A resource necessary to complete the specified operation is not reserved and should have already been; therefore, the operation cannot be completed",
+    },
+    {
+        "alt_symbol": "HW_BUFFER_FULL",
+        "py_symbol": "HARDWARE_BUFFER_FULL",
+        "code": -1074118583,
+        "comment": "NISYNC_ERROR_BASE + 73",
+        "symbol": "hwBufferFull",
+        "message": "A hardware buffer necessary to complete the specified operation is unexpectedly full; therefore, the operation cannot be completed.",
+    },
+    {
+        "alt_symbol": "SW_BUFFER_FULL",
+        "py_symbol": "SOFTWARE_BUFFER_FULL",
+        "code": -1074118582,
+        "comment": "NISYNC_ERROR_BASE + 74",
+        "symbol": "swBufferFull",
+        "message": "A software buffer necessary to complete the specified operation is unexpectedly full; therefore, the operation cannot be completed.",
+    },
+    {
+        "alt_symbol": "SOCKET_FAILURE",
+        "py_symbol": "SOCKET_FAILED",
+        "code": -1074118581,
+        "comment": "NISYNC_ERROR_BASE + 75",
+        "symbol": "socketFailure",
+        "message": "A network socket necessary to complete the specified operation has generated a failure; therefore, the operation cannot be completed.",
+    },
+    {
+        "alt_symbol": "SESSION_ABORTED",
+        "py_symbol": "SESSION_ABORTED",
+        "code": -1074118580,
+        "comment": "NISYNC_ERROR_BASE + 76",
+        "symbol": "sessionAborted",
+        "message": "The specified operation cannot be performed because a session has been aborted or a device has been removed from the system. Handle this situation as required by the application and then, if appropriate, attempt to perform the operation again.",
+    },
+    {
+        "alt_symbol": "SESSION_ABORTING",
+        "py_symbol": "SESSION_ABORTING",
+        "code": -1074118579,
+        "comment": "NISYNC_ERROR_BASE + 77",
+        "symbol": "sessionAborting",
+        "message": "The specified operation cannot be performed because a session is in the process of being aborted or a device is in the process of being removed from the system. Wait until the abort operation is complete, and attempt to perform the operation again.",
+    },
+    {
+        "alt_symbol": "TERMINAL_NOT_SPECIFIED",
+        "py_symbol": "TERMINAL_NOT_SPECIFIED",
+        "code": -1074118578,
+        "comment": "NISYNC_ERROR_BASE + 78",
+        "symbol": "terminalNotSpecified",
+        "message": "The specified operation cannot be performed since the Active Item was not specified.",
+    },
+    {
+        "alt_symbol": "TIME_OVERFLOW",
+        "py_symbol": "TIME_OVERFLOW",
+        "code": -1074118576,
+        "comment": "NISYNC_ERROR_BASE + 80",
+        "symbol": "timeOverflow",
+        "message": "A 1588 time value has overflowed.  The resulting value is not accurate.",
+    },
+    {
+        "alt_symbol": "TIME_TOO_EARLY",
+        "py_symbol": "TIME_TOO_EARLY",
+        "code": -1074118575,
+        "comment": "NISYNC_ERROR_BASE + 81",
+        "symbol": "timeTooEarly",
+        "message": "The specified time value is too early to be represented as a 1588 time value.",
+    },
+    {
+        "alt_symbol": "TIME_TOO_LATE",
+        "py_symbol": "TIME_TOO_LATE",
+        "code": -1074118574,
+        "comment": "NISYNC_ERROR_BASE + 82",
+        "symbol": "timeTooLate",
+        "message": "The specified time value is too late to be represetned as a 1588 time value.",
+    },
+    {
+        "alt_symbol": "PTP_ALREADY_STARTED",
+        "py_symbol": "PTP_ALREADY_STARTED",
+        "code": -1074118573,
+        "comment": "NISYNC_ERROR_BASE + 83",
+        "symbol": "ptpAlreadyStarted",
+        "message": "The Precision Time Protocol (PTP) has already been started on this device; therefore, it cannot be started again.",
+    },
+    {
+        "alt_symbol": "PTP_NOT_STARTED",
+        "py_symbol": "PTP_NOT_STARTED",
+        "code": -1074118572,
+        "comment": "NISYNC_ERROR_BASE + 84",
+        "symbol": "ptpNotStarted",
+        "message": "The Precision Time Protocol (PTP) has not been started on this device; therefore, it cannot be stopped.",
+    },
+    {
+        "alt_symbol": "INVALID_CLOCK_STATE",
+        "py_symbol": "CLOCK_STATE_INVALID",
+        "code": -1074118571,
+        "comment": "NISYNC_ERROR_BASE + 85",
+        "symbol": "invalidClockState",
+        "message": "The specified attribute cannot be set when the Precision Time Protocol (PTP) is in its current state.",
+    },
+    {
+        "alt_symbol": "IP_ADDRESS",
+        "py_symbol": "IP_ADDRESS",
+        "code": -1074118570,
+        "comment": "NISYNC_ERROR_BASE + 86",
+        "symbol": "ipAddress",
+        "message": "The IP address for the specified device cannot be determined; therefore, the specified operation cannot be completed.",
+    },
+    {
+        "alt_symbol": "FUTURE_TIME_EVENT_TOO_SOON",
+        "py_symbol": "FUTURE_TIME_EVENT_TOO_SOON",
+        "code": -1074118569,
+        "comment": "NISYNC_ERROR_BASE + 87",
+        "symbol": "futureTimeEventTooSoon",
+        "message": "The time for the specified future time event is too soon, or may be in the past, and cannot be programmed in the device before it would occur.",
+    },
+    {
+        "alt_symbol": "CLOCK_PERIOD_TOO_SHORT",
+        "py_symbol": "CLOCK_PERIOD_TOO_SHORT",
+        "code": -1074118568,
+        "comment": "NISYNC_ERROR_BASE + 88",
+        "symbol": "clockPeriodTooShort",
+        "message": "A clock with the specified period is too short to be generated by the device.",
+    },
+    {
+        "alt_symbol": "DUP_FUTURE_TIME_EVENT",
+        "py_symbol": "DUPLICATE_FUTURE_TIME_EVENT",
+        "code": -1074118567,
+        "comment": "NISYNC_ERROR_BASE + 89",
+        "symbol": "dupFutureTimeEvent",
+        "message": "A future time event with the same time and same terminal as the specified future time event has already been created.  Multiple future time events on the same terminal at the same time cannot be created.",
+    },
+    {
+        "alt_symbol": "SYNC_INTERVAL_MISMACH",
+        "py_symbol": "SYNC_INTERVAL_MISMACH",
+        "code": -1074118566,
+        "comment": "NISYNC_ERROR_BASE + 90",
+        "symbol": "syncIntervalMismach",
+        "message": "The specified sync interval for this 1588 clock is different than the sync interval specified for other 1588 clocks participating in the PTP.  Adjust the sync interval on this 1588 clock or the other 1588 clocks participating in the PTP to the same value.",
+    },
+    {
+        "alt_symbol": "INVALID_INITIAL_TIME",
+        "py_symbol": "INITIAL_TIME_INVALID",
+        "code": -1074118565,
+        "comment": "NISYNC_ERROR_BASE + 91",
+        "symbol": "invalidInitialTime",
+        "message": "The specified initial time is invalid.  Initial times must be after 0 hours 1 January 2000 and before 0 hours 1 January 2100.",
+    },
+    {
+        "alt_symbol": "CLK_ADJ_TOO_LARGE",
+        "py_symbol": "CLOCK_ADJUSTMENT_TOO_LARGE",
+        "code": -1074118564,
+        "comment": "NISYNC_ERROR_BASE + 92",
+        "symbol": "clkAdjTooLarge",
+        "message": "The specified 1588 clock adjustment offset is too large.  The clock adjustment cannot be more than +1 seconds or less than -1 seconds.",
+    },
+    {
+        "alt_symbol": "CLOCK_PERIOD_TOO_LARGE",
+        "py_symbol": "CLOCK_PERIOD_TOO_LARGE",
+        "code": -1074118563,
+        "comment": "NISYNC_ERROR_BASE + 93",
+        "symbol": "clockPeriodTooLarge",
+        "message": "A clock with the specified period is too large to be generated by the device.",
+    },
+    {
+        "alt_symbol": "NETWORK_ADAPTER_NOT_FOUND",
+        "py_symbol": "NETWORK_ADAPTER_NOT_FOUND",
+        "code": -1074118562,
+        "comment": "NISYNC_ERROR_BASE + 94",
+        "symbol": "networkAdapterNotFound",
+        "message": "The network interface associated with the device was not found.  Ensure that the associated NIC (network interface controller) is installed and enabled.",
+    },
+    {
+        "alt_symbol": "NO_COMMON_TRIG_LINE_FOR_ROUTE",
+        "py_symbol": "NO_COMMON_TRIGGER_LINE_FOR_ROUTE",
+        "code": -1074118561,
+        "comment": "NISYNC_ERROR_BASE + 95",
+        "symbol": "noCommonTrigLineForRoute",
+        "message": "There are no shared trigger lines between the two devices which are acceptable to both devices. Consider routing the signal through the I/O connectors of the two devices, if applicable.",
+    },
+    {
+        "alt_symbol": "TIMESTAMP_DECIMATION_NOT_SUPPORTED",
+        "py_symbol": "TIMESTAMP_DECIMATION_NOT_SUPPORTED",
+        "code": -1074118560,
+        "comment": "NISYNC_ERROR_BASE + 96",
+        "symbol": "timestampDecimationNotSupported",
+        "message": "This device does not support timestamp decimation.",
+    },
+    {
+        "alt_symbol": "TIMESTAMP_DECIMATION_COUNT_TOO_SMALL",
+        "py_symbol": "TIMESTAMP_DECIMATION_COUNT_TOO_SMALL",
+        "code": -1074118559,
+        "comment": "NISYNC_ERROR_BASE + 97",
+        "symbol": "timestampDecimationCountTooSmall",
+        "message": "The timestamp decimation count must be greater than 0 for this device.",
+    },
+    {
+        "alt_symbol": "TIMESTAMP_DECIMATION_COUNT_TOO_LARGE",
+        "py_symbol": "TIMESTAMP_DECIMATION_COUNT_TOO_LARGE",
+        "code": -1074118558,
+        "comment": "NISYNC_ERROR_BASE + 98",
+        "symbol": "timestampDecimationCountTooLarge",
+        "message": "The specified timestamp decimation count is too great for this device.",
+    },
+    {
+        "alt_symbol": "FUTURE_TIME_EVENT_REARM_TIME_VIOLATION",
+        "py_symbol": "FUTURE_TIME_EVENT_REARM_TIME_VIOLATION",
+        "code": -1074118557,
+        "comment": "NISYNC_ERROR_BASE + 99",
+        "symbol": "futureTimeEventRearmTimeViolation",
+        "message": "The specified future time event violates the rearm time of the future time event engine.",
+    },
+    {
+        "alt_symbol": "TIME_SNAPPED",
+        "py_symbol": "TIME_SNAPPED",
+        "code": -1074118556,
+        "comment": "NISYNC_ERROR_BASE + 100",
+        "symbol": "timeSnapped",
+        "message": "Board time was snapped back during measurement.",
+    },
+    {
+        "alt_symbol": "TR_TYPE_MISMATCH",
+        "py_symbol": "TIME_REFERENCE_TYPE_MISMATCH",
+        "code": -1074118555,
+        "comment": "NISYNC_ERROR_BASE + 101",
+        "symbol": "trTypeMismatch",
+        "message": "The requested property is not supported by the time reference specified on the Active Item.",
+    },
+    {
+        "alt_symbol": "TR_INSTANCE_NOT_FOUND",
+        "py_symbol": "TIME_REFERENCE_INSTANCE_NOT_FOUND",
+        "code": -1074118554,
+        "comment": "NISYNC_ERROR_BASE + 102",
+        "symbol": "trInstanceNotFound",
+        "message": "The requested time reference instance was not found.",
+    },
+    {
+        "alt_symbol": "REMOTE_DEVICE_READ_FAILURE",
+        "py_symbol": "REMOTE_DEVICE_READ_FAILED",
+        "code": -1074118553,
+        "comment": "NISYNC_ERROR_BASE + 103",
+        "symbol": "remoteDeviceReadFailure",
+        "message": "The data received from the remote device could not be interpreted. Try to perform the operation again.",
+    },
+    {
+        "alt_symbol": "REMOTE_DEVICE_COMMUNICATION_FAILURE",
+        "py_symbol": "REMOTE_DEVICE_COMMUNICATION_FAILED",
+        "code": -1074118552,
+        "comment": "NISYNC_ERROR_BASE + 104",
+        "symbol": "remoteDeviceCommunicationFailure",
+        "message": "A failure occured while communicating with the remote device. Ensure the remote device is accessible.",
+    },
+    {
+        "alt_symbol": "LIB_LOAD_FAILURE",
+        "py_symbol": "LIBRARY_LOAD_FAILED",
+        "code": -1074118551,
+        "comment": "NISYNC_ERROR_BASE + 105",
+        "symbol": "libLoadFailure",
+        "message": "Unable to load an internal library. If the error persists contact NI support.",
+    },
+    {
+        "alt_symbol": "INVALID_RESOURCE_NAME_FORMAT",
+        "py_symbol": "RESOURCE_NAME_FORMAT_INVALID",
+        "code": -1074118550,
+        "comment": "NISYNC_ERROR_BASE + 106",
+        "symbol": "invalidResourceNameFormat",
+        "message": "The resource name format is invalid.",
+    },
+    {
+        "alt_symbol": "TR_INSTANCE_ALREADY_EXISTS",
+        "py_symbol": "TIME_REFERENCE_INSTANCE_ALREADY_EXISTS",
+        "code": -1074118549,
+        "comment": "NISYNC_ERROR_BASE + 107",
+        "symbol": "trInstanceAlreadyExists",
+        "message": "The specified time reference already exists.",
+    },
+    {
+        "alt_symbol": "REMOTE_DEVICE_RESOURCE_NOT_FOUND",
+        "py_symbol": "REMOTE_DEVICE_RESOURCE_NOT_FOUND",
+        "code": -1074118548,
+        "comment": "NISYNC_ERROR_BASE + 108",
+        "symbol": "remoteDeviceResourceNotFound",
+        "message": "Requested resource not found on a remote device. This may be because the device was not reachable or has experienced an internal error. It may also mean you need to update software or firmware on the remote device.",
+    },
+    {
+        "alt_symbol": "CONFLICTING_TR_INSTANCES",
+        "py_symbol": "CONFLICTING_TIME_REFERENCE_INSTANCES",
+        "code": -1074118547,
+        "comment": "NISYNC_ERROR_BASE + 109",
+        "symbol": "conflictingTrInstances",
+        "message": "The time reference you are trying to enable conflicts with a time reference already running on the same interface. Disable the conflicting time reference and retry the operation.",
+    },
+    {
+        "alt_symbol": "TR_ATTR_NOT_FOUND",
+        "py_symbol": "TIME_REFERENCE_ATTRIBUTE_NOT_FOUND",
+        "code": -1074118546,
+        "comment": "NISYNC_ERROR_BASE + 110",
+        "symbol": "trAttrNotFound",
+        "message": "The requested attribute is not currently available. This may be because the time reference is disabled, not ready, or has encountered an error.",
+    },
+    {
+        "alt_symbol": "COMMUNICATIONS_FAULT",
+        "py_symbol": "COMMUNICATIONS_FAILED",
+        "code": -1074118545,
+        "comment": "NISYNC_ERROR_BASE + 111",
+        "symbol": "communicationsFault",
+        "message": "A failure occured while communicating with a required software service running on the device. Restart the device. If the error persists, contact NI support.",
+    },
+    {
+        "alt_symbol": "NSUP_ATTR",
+        "py_symbol": "ATTRIBUTE_NOT_SUPPORTED",
+        "code": -1073807331,
+        "comment": "VI_ERROR_NSUP_ATTR",
+        "symbol": "nsupAttr",
+        "message": "The specified attribute is not supported.",
+    },
+    {
+        "alt_symbol": "NSUP_ATTR_STATE",
+        "py_symbol": "ATTRIBUTE_STATE_NOT_SUPPORTED",
+        "code": -1073807330,
+        "comment": "VI_ERROR_NSUP_ATTR_STATE",
+        "symbol": "nsupAttrState",
+        "message": "The specified attribute state is not supported.",
+    },
+    {
+        "alt_symbol": "ATTR_READONLY",
+        "py_symbol": "ATTRIBUTE_READONLY",
+        "code": -1073807329,
+        "comment": "VI_ERROR_ATTR_READONLY",
+        "symbol": "attrReadonly",
+        "message": "The specified attribute is read-only.",
+    },
+    {
+        "alt_symbol": "DEST_TERMINAL_IN_USE",
+        "py_symbol": "DESTINATION_TERMINAL_IN_USE",
+        "code": -1073807294,
+        "comment": "VI_ERROR_LINE_IN_USE",
+        "symbol": "destTerminalInUse",
+        "message": "The specified destination terminal is in use.",
+    },
+    {
+        "alt_symbol": "INV_PARAMETER",
+        "py_symbol": "PARAMETER_INVALID",
+        "code": -1073807240,
+        "comment": "VI_ERROR_INV_PARAMETER",
+        "symbol": "invParameter",
+        "message": "A parameter for this operation is invalid.",
+    },
+    {
+        "alt_symbol": "ALLOC",
+        "py_symbol": "ALLOCATION_FAILED",
+        "code": -1073807300,
+        "comment": "VI_ERROR_ALLOC",
+        "symbol": "allocationFailed",
+        "message": "Insufficient system resources to perform necessary memory allocation.",
+    },
+    {
+        "alt_symbol": "INV_OBJECT",
+        "py_symbol": "OBJECT_INVALID",
+        "code": -1073807346,
+        "comment": "VI_ERROR_INV_OBJECT",
+        "symbol": "invalidObject",
+        "message": "The given session or object reference is invalid.",
+    },
+    {
+        "alt_symbol": "SYSTEM_ERROR",
+        "py_symbol": "SYSTEM_ERROR",
+        "code": -1073807360,
+        "comment": "VI_ERROR_SYSTEM_ERROR",
+        "symbol": "systemError",
+        "message": "Unknown system error (miscellaneous error).",
+    },
+]
