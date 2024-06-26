@@ -1,20 +1,15 @@
 import datetime
-import hightime
 import math
-import os
-import pytest
-
 from decimal import Decimal
 
-parent_dir, _ = os.path.split(os.path.dirname(__file__))
-# Set the current working directory to the parent directory of test_import.py.
-os.chdir(parent_dir)
+import hightime
+import pytest
 
 from nisync.session import (
-    _tai_timestamp_to_tai_time,
-    _tai_time_to_tai_timestamp,
-    _tai_time_parts_to_date_time,
     _date_time_to_tai_time_parts,
+    _tai_time_parts_to_date_time,
+    _tai_time_to_tai_timestamp,
+    _tai_timestamp_to_tai_time,
 )
 
 # for precision tests, define a small and large timestamp and their corresponding datetimes

@@ -15,6 +15,7 @@ ROOT_DIR = pathlib.Path(__file__).parent.parent
 
 
 def main():
+    """Main function to generate templates based on specified input files."""
     # Template inputs
     errors_path = ROOT_DIR / "includes" / "errors.nimxl"
     headers = {"nisync.h": None, "internal.h": None}

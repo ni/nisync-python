@@ -2,8 +2,7 @@ import ctypes
 import platform
 import threading
 
-from nisync import _library
-from nisync import errors
+from nisync import _library, errors
 
 _instance = None
 _instance_lock = threading.Lock()
@@ -34,6 +33,7 @@ def _get_library_type():
 
 
 def get():
+    """Returns a singleton instance of the nisync library."""
     global _instance
     global _instance_lock
 

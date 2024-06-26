@@ -1,9 +1,5 @@
 import os
 
-parent_dir, _ = os.path.split(os.path.dirname(__file__))
-# Set the current working directory to the parent directory of test_import.py.
-os.chdir(parent_dir)
-
 # Walk all module directories and create import tests for all non-private python
 # modules.
 for root, dirs, files in os.walk("nisync"):
