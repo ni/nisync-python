@@ -868,7 +868,6 @@ class Session(_SessionBase):
 class TimeReference(object):
     def __init__(self, session):
         self._session = session
-        self._ports = None
 
     @property
     def name(self):
@@ -876,27 +875,6 @@ class TimeReference(object):
         Returns the name of the time references instance.
         """
         return self._session._active_item
-
-    @property
-    def ports(self):
-        class PortSession(_SessionBase):
-            pass
-
-        if self._ports is None:
-            self._ports = []
-            num_ports = 1
-            tr_type = self._session.time_reference_type
-            if tr_type == "IEEE 802.1AS-2011 TAB" or tr_type == "IEEE 1588-2008 BC":
-                num_ports = 2
-            for _ in range(num_ports):
-                session = PortSession(
-                    self._session._vi, self._session._library, self._session._active_item
-                )
-                if tr_type.startswith("IEEE 1588-2008"):
-                    self._ports.append(IEEE1588Port(session))
-                if tr_type.startswith("IEEE 802.1AS-2011"):
-                    self._ports.append(IEEE8021ASPort(session))
-        return self._ports
 
     @property
     def present(self):
@@ -1294,86 +1272,3 @@ class EtherCATTimeReference(TimeReference):
 
 class PPSTimeReference(TimeReference):
     pass
-
-
-class Port(object):
-    def __init__(self, session):
-        self._session = session
-
-
-class IEEE1588Port(Port):
-
-    @property
-    def port_state(self):
-        return self._session.ieee_1588_port_state
-
-    @port_state.setter
-    def port_state(self, value):
-        self._session.ieee_1588_port_state = value
-
-    @property
-    def log_sync_interval(self):
-        return self._session.ieee_1588_log_sync_interval
-
-    @log_sync_interval.setter
-    def log_sync_interval(self, value):
-        self._session.ieee_1588_log_sync_interval = value
-
-    @property
-    def interface_name(self):
-        return self._session.ieee_1588_interface_name
-
-    @interface_name.setter
-    def interface_name(self, value):
-        self._session.ieee_1588_interface_name = value
-
-
-class IEEE8021ASPort(Port):
-
-    @property
-    def port_state(self):
-        return self._session.ieee_8021as_port_state
-
-    @port_state.setter
-    def port_state(self, value):
-        self._session.ieee_8021as_port_state = value
-
-    @property
-    def log_sync_interval(self):
-        return self._session.ieee_8021as_log_sync_interval
-
-    @log_sync_interval.setter
-    def log_sync_interval(self, value):
-        self._session.ieee_8021as_log_sync_interval = value
-
-    @property
-    def log_announce_interval(self):
-        return self._session.ieee_8021as_log_announce_interval
-
-    @log_announce_interval.setter
-    def log_announce_interval(self, value):
-        self._session.ieee_8021as_log_announce_interval = value
-
-    @property
-    def interface_name(self):
-        return self._session.ieee_8021as_interface_name
-
-    @interface_name.setter
-    def interface_name(self, value):
-        self._session.ieee_8021as_interface_name = value
-
-    @property
-    def neighbor_prop_delay_thresh(self):
-        return self._session.ieee_8021as_neighbor_prop_delay_thresh
-
-    @neighbor_prop_delay_thresh.setter
-    def neighbor_prop_delay_thresh(self, value):
-        self._session.ieee_8021as_neighbor_prop_delay_thresh = value
-
-    @property
-    def as_capable(self):
-        return self._session.ieee_8021as_as_capable
-
-    @as_capable.setter
-    def as_capable(self, value):
-        self._session.ieee_8021as_as_capable = value

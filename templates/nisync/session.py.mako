@@ -658,9 +658,10 @@ class Session(_SessionBase):
         ('IRIGBTimeReference',      'TimeReference'),
         ('EtherCATTimeReference',   'TimeReference'),
         ('PPSTimeReference',        'TimeReference'),
-        ('Port',                    'object'),
-        ('IEEE1588Port',            'Port'),
-        ('IEEE8021ASPort',          'Port')
+# Do not generate port API
+#        ('Port',                    'object'),
+#        ('IEEE1588Port',            'Port'),
+#        ('IEEE8021ASPort',          'Port')
 
     ]
 %>\
@@ -673,7 +674,8 @@ class ${namespace}(${parent}):
         self._session = session
 %       endif
 %       if namespace == 'TimeReference':
-        self._ports = None
+## Do not generate port API
+##        self._ports = None
 
     @property
     def name(self):
@@ -681,24 +683,24 @@ class ${namespace}(${parent}):
         Returns the name of the time references instance.
         '''
         return self._session._active_item
-
-    @property
-    def ports(self):
-        class PortSession(_SessionBase):
-            pass
-        if self._ports is None:
-            self._ports = []
-            num_ports = 1
-            tr_type = self._session.time_reference_type
-            if tr_type == 'IEEE 802.1AS-2011 TAB' or tr_type == 'IEEE 1588-2008 BC':
-                num_ports = 2
-            for _ in range(num_ports):
-                session = PortSession(self._session._vi, self._session._library, self._session._active_item)
-                if tr_type.startswith('IEEE 1588-2008'):
-                    self._ports.append(IEEE1588Port(session))
-                if tr_type.startswith('IEEE 802.1AS-2011'):
-                    self._ports.append(IEEE8021ASPort(session))
-        return self._ports
+## Do not generate port API
+##    @property
+##    def ports(self):
+##        class PortSession(_SessionBase):
+##            pass
+##        if self._ports is None:
+##            self._ports = []
+##            num_ports = 1
+##            tr_type = self._session.time_reference_type
+##            if tr_type == 'IEEE 802.1AS-2011 TAB' or tr_type == 'IEEE 1588-2008 BC':
+##                num_ports = 2
+##            for _ in range(num_ports):
+##                session = PortSession(self._session._vi, self._session._library, self._session._active_item)
+##                if tr_type.startswith('IEEE 1588-2008'):
+##                    self._ports.append(IEEE1588Port(session))
+##                if tr_type.startswith('IEEE 802.1AS-2011'):
+##                    self._ports.append(IEEE8021ASPort(session))
+##        return self._ports
 %       endif
 <%
         additional_namespace_attrs = False
