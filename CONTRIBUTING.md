@@ -21,11 +21,36 @@ See [GitHub's official documentation](https://help.github.com/articles/using-pul
 
 # Getting Started
 
-- TODO: include build steps here.
+To contribute to this project, it is recommended that you follow these steps:
+
+1. Ensure you have [poetry](https://python-poetry.org/) [installed](https://python-poetry.org/docs/#installation)
+2. Fork the repository on GitHub.
+3. Install **nisync** dependencies using ``poetry install``
+4. Run the unit tests on your system (see Testing section). At this point, if any tests fail, do not
+begin development. Try to investigate these failures. If you're unable to do so, report an issue
+through our [GitHub issues page](http://github.com/ni/nisync-python/issues).
+5. Write new tests that demonstrate your bug or feature. Ensure that these new tests fail.
+6. Make your change.
+7. Once the necessary changes are done, update the auto-generated code using ``poetry run python scripts/gen_templates.py``. This will ensure that the all code generated files are fresh.
+8. Run all the unit tests again (including the tests you just added), and confirm that they all
+pass.
+9. Send a GitHub Pull Request to the main repository's master branch. GitHub Pull Requests are the
+expected method of code collaboration on this project.
 
 # Testing
 
-- TODO: include testing steps here.
+In order to be able to run the **nisync** unit tests, your setup should meet the following minimum
+requirements:
+
+- Machine has a supported version of CPython or PyPy installed.
+- Machine has [poetry](https://python-poetry.org/) installed.
+
+To run the **nisync** unit tests in a specific version of Python, run the following command in the
+root of the distribution:
+
+```sh
+$ poetry run pytest
+```
 
 # Developer Certificate of Origin (DCO)
 
