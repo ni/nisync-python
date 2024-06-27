@@ -55,8 +55,8 @@ def _date_time_to_tai_time_parts(date_time=None):
     return int(seconds), int(nanoseconds), int(frac_nanoseconds)
 
 
-def _create_string_buffer(ascii_string):
-    return ctypes.create_string_buffer(bytes(ascii_string.encode("ascii")))
+def _encode_c_string(value):
+    return value.encode("ascii")
 
 
 class _SessionBase(object):
@@ -218,7 +218,7 @@ class _SessionBase(object):
 
     def _get_attribute_vi_int32(self, attribute):
         vi_ctype = _visatype.ViSession(self._vi)
-        active_item_ctype = _create_string_buffer(self._active_item or "")
+        active_item_ctype = _encode_c_string(self._active_item or "")
         attribute_ctype = _visatype.ViAttr(attribute)
         value_ctype = _visatype.ViInt32()
         error_code = self._library.niSync_GetAttributeViInt32(
@@ -229,7 +229,7 @@ class _SessionBase(object):
 
     def _set_attribute_vi_int32(self, attribute, value):
         vi_ctype = _visatype.ViSession(self._vi)
-        active_item_ctype = _create_string_buffer(self._active_item or "")
+        active_item_ctype = _encode_c_string(self._active_item or "")
         attribute_ctype = _visatype.ViAttr(attribute)
         value_ctype = _visatype.ViInt32(value)
         error_code = self._library.niSync_SetAttributeViInt32(
@@ -239,7 +239,7 @@ class _SessionBase(object):
 
     def _get_attribute_vi_real64(self, attribute):
         vi_ctype = _visatype.ViSession(self._vi)
-        active_item_ctype = _create_string_buffer(self._active_item or "")
+        active_item_ctype = _encode_c_string(self._active_item or "")
         attribute_ctype = _visatype.ViAttr(attribute)
         value_ctype = _visatype.ViReal64()
         error_code = self._library.niSync_GetAttributeViReal64(
@@ -250,7 +250,7 @@ class _SessionBase(object):
 
     def _set_attribute_vi_real64(self, attribute, value):
         vi_ctype = _visatype.ViSession(self._vi)
-        active_item_ctype = _create_string_buffer(self._active_item or "")
+        active_item_ctype = _encode_c_string(self._active_item or "")
         attribute_ctype = _visatype.ViAttr(attribute)
         value_ctype = _visatype.ViReal64(value)
         error_code = self._library.niSync_SetAttributeViReal64(
@@ -260,7 +260,7 @@ class _SessionBase(object):
 
     def _get_attribute_vi_boolean(self, attribute):
         vi_ctype = _visatype.ViSession(self._vi)
-        active_item_ctype = _create_string_buffer(self._active_item or "")
+        active_item_ctype = _encode_c_string(self._active_item or "")
         attribute_ctype = _visatype.ViAttr(attribute)
         value_ctype = _visatype.ViBoolean()
         error_code = self._library.niSync_GetAttributeViBoolean(
@@ -271,7 +271,7 @@ class _SessionBase(object):
 
     def _set_attribute_vi_boolean(self, attribute, value):
         vi_ctype = _visatype.ViSession(self._vi)
-        active_item_ctype = _create_string_buffer(self._active_item or "")
+        active_item_ctype = _encode_c_string(self._active_item or "")
         attribute_ctype = _visatype.ViAttr(attribute)
         value_ctype = _visatype.ViBoolean(value)
         error_code = self._library.niSync_SetAttributeViBoolean(
@@ -281,7 +281,7 @@ class _SessionBase(object):
 
     def _get_attribute_vi_string(self, attribute):
         vi_ctype = _visatype.ViSession(self._vi)
-        active_item_ctype = _create_string_buffer(self._active_item or "")
+        active_item_ctype = _encode_c_string(self._active_item or "")
         attribute_ctype = _visatype.ViAttr(attribute)
         buffer_size_ctype = _visatype.ViInt32(256)
         value_ctype = ctypes.create_string_buffer(buffer_size_ctype.value)
@@ -293,7 +293,7 @@ class _SessionBase(object):
 
     def _set_attribute_vi_string(self, attribute, value):
         vi_ctype = _visatype.ViSession(self._vi)
-        active_item_ctype = _create_string_buffer(self._active_item or "")
+        active_item_ctype = _encode_c_string(self._active_item or "")
         attribute_ctype = _visatype.ViAttr(attribute)
         value_ctype = _visatype.ViConstString(value.encode("ascii"))
         error_code = self._library.niSync_SetAttributeViString(
@@ -302,7 +302,7 @@ class _SessionBase(object):
         errors.handle_error(self, error_code)
 
     def _init(self, resource_name, id_query=False, reset_device=False):
-        resource_name_ctype = _create_string_buffer(resource_name)
+        resource_name_ctype = _encode_c_string(resource_name)
         id_query_ctype = _visatype.ViBoolean(id_query)
         reset_device_ctype = _visatype.ViBoolean(reset_device)
         vi_ctype = _visatype.ViSession()
