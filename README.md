@@ -1,15 +1,77 @@
-# GitHub Repo Template
+# About
 
-GitHub Repo Template is a template for creation of open source projects made
-available on GitHub. It includes a permissive open source license, a developer
-certificate of origin, and a pull request template. This provides everything
-necessary to have a properly licensed open source project.
+The **nisync** package contains an API (Application Programming Interface)
+for interacting with the NI-Sync driver. The package is implemented in Python.
+The package is implemented as a complex,
+highly object-oriented wrapper around the NI-Synce C API using the
+[ctypes](https://docs.python.org/2/library/ctypes.html) Python library.
 
-## Using GitHub Repo Template
+**nisync** supports all versions of the NI-Synce driver that ships with the C
+API. The C API is included in any version of the driver that supports it. The
+**nisync** package does not require installation of the C header files.
 
-1. Clone or download this repository.
-2. Copy its contents into your project (including the hidden .github directory). 
-3. Customize each file to suit your project's needs (including the README). Look through the files for "TODO" and nisync-python, and replace with content appropriate to your project.
-4. (Optional) Check out [GitHub Template Guidelines](https://github.com/cezaraugusto/github-template-guidelines) for ideas about how to customize your project.
+Some functions in the **nisync** package may be unavailable with earlier
+versions of the NI-sync driver. Visit the
+[ni.com/downloads](http://www.ni.com/downloads/) to upgrade your version of
+NI-Sync.
 
-TODO: describe a project in detail, what it does, how to use it, etc.
+**nisync** supports Windows and Linux operating systems where the NI-Sync
+driver is supported. Refer to
+[NI Hardware and Operating System Compatibility](https://www.ni.com/r/hw-support)
+for which versions of the driver support your hardware on a given operating
+system.
+
+**nisync** supports CPython 3.8+ and PyPy3.
+
+# Installation
+
+Running **nisync** requires NI-Sync to be installed. Visit
+[ni.com/downloads](http://www.ni.com/downloads/) to download the latest
+version of NI-Sync. None of the recommended **Additional items** are required
+for **nisync** to function, and they can be removed to minimize installation
+size. It is recommended you continue to install the **NI Certificates** package
+to allow your Operating System to trust NI built binaries, improving your
+software and hardware installation experience.
+
+**nisync** can be installed with [pip](http://pypi.python.org/pypi/pip>):
+
+```shell
+python -m pip install nisync
+```
+
+# Getting Started
+In order to use the **nisync** package, you must have at least one device that supports NI-Sync 
+installed on your system. Both physical and simulated devices are supported.
+You can use **NI MAX** or **NI Hardware Configuration Utility** to verify and configure your devices.
+
+# Usage
+The following is a basic example of using an **nisync.nisync.Session** object. This example illustrates how to connect and disconnect clock terminals to synchronize devices using the onboard oscillator as the clock source. This is particularly useful in applications requiring precise timing and synchronization across multiple devices.
+
+```python
+import nisync
+from nisync.constants import CLK10_IN, OSCILLATOR
+
+# Create a new session with the nisync library
+with nisync.Session() as session:
+    # Connect the onboard oscillator to the PXI_CLK10_IN terminal
+    # This setup is typically used for synchronizing measurements across devices
+    session.connect_clock_terminals(OSCILLATOR, CLK10_IN)
+    
+    # Perform measurements or operations that require synchronization
+    
+    # Once operations are complete, disconnect the terminals
+    session.disconnect_clock_terminals(OSCILLATOR, CLK10_IN)
+```
+
+
+# Documentation
+
+Refer to the [NI-Sync Help](https://www.ni.com/docs/en-US/bundle/ni-sync/page/user-manual-welcome.html)
+for API-agnostic information about NI-Sync concepts.
+
+# License
+
+**nisync** is licensed under an MIT-style license (see
+[LICENSE](https://github.com/ni/nisync-python/blob/main/LICENSE)).
+Other incorporated projects may be licensed under different licenses. All
+licenses allow for non-commercial and commercial use.
