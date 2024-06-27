@@ -1,1 +1,1 @@
-"""Unit tests for the nisync package."""
+"""Automated tests for the nisync package."""
