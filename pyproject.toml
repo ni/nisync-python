@@ -55,7 +55,7 @@ line-length = 100
 
 [tool.ni-python-styleguide]
 application-import-names = "nisync"
-extend_exclude = "nisync/_attributes.py,nisync/errors.py,nisync/_errorcodes.py,_library.py,enums.py,session.py"
+extend_exclude = "nisync/_attributes.py,nisync/errors.py,nisync/_errorcodes.py,_time_references.py,_library.py,enums.py,session.py"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
