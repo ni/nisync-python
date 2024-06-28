@@ -11,6 +11,6 @@
 % if name.endswith("0"):
 
 % endif
-${name} = "${data["value"]}"
+${data["value"].upper()} = "${data["value"]}"
 <% previous = name %>\
 % endfor

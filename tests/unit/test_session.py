@@ -3,7 +3,7 @@ import pytest
 import nisync
 import nisync._library_singleton
 from nisync._visatype import ViBoolean, ViSession
-from nisync.constants import CLK10_IN, OSCILLATOR
+from nisync.constants import PXI_CLK10_IN, OSCILLATOR
 
 try:
     from unittest import mock
@@ -166,12 +166,12 @@ def test___session___connect_clock_terminals___succeeds(lib_mock):
     lib_mock.niSync_ConnectClkTerminals.return_value = 0
 
     with nisync.Session(RESOURCE_NAME) as session:
-        session.connect_clock_terminals(source=OSCILLATOR, destination=CLK10_IN)
+        session.connect_clock_terminals(source=OSCILLATOR, destination=PXI_CLK10_IN)
 
     expected_calls = [
         mock.call.niSync_init(RESOURCE_NAME.encode(), VI_FALSE, VI_FALSE, mock.ANY),
         mock.call.niSync_ConnectClkTerminals(
-            SESSION_HANDLE, OSCILLATOR.encode(), CLK10_IN.encode()
+            SESSION_HANDLE, OSCILLATOR.encode(), PXI_CLK10_IN.encode()
         ),
         mock.call.niSync_close(SESSION_HANDLE),
     ]
@@ -182,12 +182,12 @@ def test___session___disconnect_clock_terminals___succeeds(lib_mock):
     lib_mock.niSync_DisconnectClkTerminals.return_value = 0
 
     with nisync.Session(RESOURCE_NAME) as session:
-        session.disconnect_clock_terminals(source=OSCILLATOR, destination=CLK10_IN)
+        session.disconnect_clock_terminals(source=OSCILLATOR, destination=PXI_CLK10_IN)
 
     expected_calls = [
         mock.call.niSync_init(RESOURCE_NAME.encode(), VI_FALSE, VI_FALSE, mock.ANY),
         mock.call.niSync_DisconnectClkTerminals(
-            SESSION_HANDLE, OSCILLATOR.encode(), CLK10_IN.encode()
+            SESSION_HANDLE, OSCILLATOR.encode(), PXI_CLK10_IN.encode()
         ),
         mock.call.niSync_close(SESSION_HANDLE),
     ]
