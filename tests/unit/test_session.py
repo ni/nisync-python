@@ -62,8 +62,7 @@ def lib_mock(mocker):
     lib.niSync_close.return_value = 0
     lib.niSync_error_message.side_effect = error_message_mock
     yield lib
-    # Reset the singleton instance to avoid side effects between tests
-    nisync._library_singleton._instance = None
+   
 
 
 def test___session___open_and_close___succeeds(lib_mock):
