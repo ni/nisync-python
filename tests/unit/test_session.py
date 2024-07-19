@@ -3,7 +3,7 @@ import pytest
 import nisync
 import nisync._library_singleton
 from nisync._visatype import ViBoolean, ViSession
-from nisync.constants import PXI_CLK10_IN, OSCILLATOR
+from nisync.constants import OSCILLATOR, PXI_CLK10_IN
 
 try:
     from unittest import mock
@@ -62,7 +62,6 @@ def lib_mock(mocker):
     lib.niSync_close.return_value = 0
     lib.niSync_error_message.side_effect = error_message_mock
     yield lib
-   
 
 
 def test___session___open_and_close___succeeds(lib_mock):
