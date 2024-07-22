@@ -46,13 +46,11 @@ def resource_name(request):
 def pytest_configure(config):
     """Reset the nisync library singleton before each test session."""
     nisync._library_singleton._instance = None
-    pass
 
 
 def pytest_runtest_setup(item):
     """Reset the nisync library singleton before each next test session."""
     nisync._library_singleton._instance = None
-    pass
 
 
 @pytest.fixture(scope="function")
@@ -60,12 +58,10 @@ def sync_session_with_reset(resource_name):
     """Open a session with reset_device=True and close it after the test."""
     with Session(resource_name, True) as session:
         yield session
-    session.close()
 
 
 @pytest.fixture(scope="function")
-def get_sync_session(resource_name):
+def sync_session(resource_name):
     """Open a session with reset_device=False and close it after the test."""
     with Session(resource_name, False) as session:
         yield session
-    session.close()
