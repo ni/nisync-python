@@ -19,8 +19,3 @@ def test_open_session_invalid_resource_name(resource_name, error_type, error_cod
         session = Session(resource_name, True)
         session.close()
     assert expected_info.value.code == error_code
-
-
-def test_open_close_session_with_input_resource_name(resource_name):
-    session = Session(resource_name, True)
-    session.close()

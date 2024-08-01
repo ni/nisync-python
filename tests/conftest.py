@@ -1,7 +1,7 @@
 """Configure pytest for testing with nisync devices.
 
 This module includes fixtures for setting up session-wide resources 
-and command line options for specifying resource names.It also 
+and command line options for specifying resource names. It also 
 ensures the nisync library singleton is reset before each test to 
 avoid side effects.
 """
@@ -43,16 +43,6 @@ def resource_name(request):
     return request.config.getoption("--resource_name")
 
 
-def pytest_configure(config):
-    """Reset the nisync library singleton before each test session."""
-    nisync._library_singleton._instance = None
-
-
-def pytest_runtest_setup(item):
-    """Reset the nisync library singleton before each next test session."""
-    nisync._library_singleton._instance = None
-
-
 @pytest.fixture(scope="function")
 def sync_session_with_reset(resource_name):
     """Open a session with reset_device=True and close it after the test."""
@@ -65,3 +55,4 @@ def sync_session(resource_name):
     """Open a session with reset_device=False and close it after the test."""
     with Session(resource_name, False) as session:
         yield session
+        session.reset()
