@@ -14,7 +14,9 @@ def test___open_session_with_reset___close_session(resource_name, reset_device):
 @pytest.mark.parametrize(
     "resource_name, error_type, error_code", [("FakeDevice", DriverError, Status.DEVICE_NOT_FOUND)]
 )
-def test___open_session___invalid_resource_name___assert_expected_error(resource_name, error_type, error_code):
+def test___open_session___invalid_resource_name___assert_expected_error(
+    resource_name, error_type, error_code
+):
     with pytest.raises(error_type) as expected_info:
         session = Session(resource_name, True)
         session.close()

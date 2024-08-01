@@ -1,14 +1,11 @@
 """Configure pytest for testing with nisync devices.
 
-This module includes fixtures for setting up session-wide resources 
-and command line options for specifying resource names. It also 
-ensures the nisync library singleton is reset before each test to 
-avoid side effects.
+This module includes fixtures for setting up resources 
+and command line options for specifying resource names needed by test_session.py.
 """
 
 import pytest
 
-import nisync._library_singleton
 from nisync import Session
 
 
