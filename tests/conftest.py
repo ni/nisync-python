@@ -29,7 +29,7 @@ def pytest_collection_modifyitems(config, items):
             reason="Require command argurment --resource_name option to run"
         )
         for item in items:
-            if "functional_test" in str(item.fspath):  # Adjust the path as needed
+            if "acceptance" in str(item.fspath):  # Adjust the path as needed
                 item.add_marker(skip_special)
 
 
