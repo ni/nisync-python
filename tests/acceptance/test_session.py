@@ -17,7 +17,7 @@ def test___open_session_with_reset___close_session(resource_name, reset_device):
 def test___open_session___invalid_resource_name___assert_expected_error(
     resource_name, error_type, error_code
 ):
-    with pytest.raises(error_type) as expected_info:
+    with pytest.raises(error_type) as exc_info:
         session = Session(resource_name, True)
         session.close()
-    assert expected_info.value.code == error_code
+    assert exc_info.value.code == error_code
