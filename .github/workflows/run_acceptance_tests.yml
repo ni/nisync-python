@@ -1,0 +1,59 @@
+name: Run acceptance tests
+
+on:
+  workflow_call:
+    inputs:
+      simulated_device_model:
+        description: 'The model of the simulated device'
+        required: false
+        default: 'NI PXIe-6674T'
+      simulated_device_alias:
+        description: 'The alias of the simulated device'
+        required: false
+        default: '6674T'
+  workflow_dispatch:
+      simulated_device_model:
+        description: 'The model of the simulated device'
+        required: false
+        default: 'NI PXIe-6674T'
+      simulated_device_alias:
+        description: 'The alias of the simulated device'
+        required: false
+        default: '6674T'
+
+jobs:
+  run_acceptance_tests:
+    name: Run acceptance tests
+    runs-on:
+      - self-hosted
+      - windows
+      - x64
+      - rdss-nisyncbot-${{ matrix.configuration }}
+    strategy:
+      matrix:
+        configuration: ["win-10-py32", "win-10-py64"]
+      # Fail-fast skews the pass/fail ratio and seems to make pytest produce
+      # incomplete JUnit XML results.
+      fail-fast: false
+    timeout-minutes: 90
+    env:
+      SIMULATED_DEVICE_MODEL: ${{ matrix.simulated_device_model }}
+      SIMULATED_DEVICE_ALIAS: ${{ matrix.simulated_device_alias }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+      - name: Set Up simulated device
+        run: C:\nisimdev\nisimdev.exe create -S true -V "National Instruments" -M ${{ env.SIMULATED_DEVICE_MODEL }} -l "PXI1" -s 2 -a ${{ env.SIMULATED_DEVICE_ALIAS }}
+      - name: Install dependencies
+        run: poetry install
+      - name: Run acceptance tests
+        run: poetry run pytest --resource_name=${{ env.SIMULATED_DEVICE_ALIAS }} --junitxml=test_results/acceptance-${{ matrix.configuration }}.xml
+      - name: Rename test results
+        run: Get-ChildItem test_results/*.xml | Rename-Item -NewName { $_.Name -replace '.xml','-${{ matrix.configuration }}.xml' }
+        if: always() && runner.os == 'Windows'
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: test_results_acceptance_${{ matrix.configuration }}
+          path: test_results/*.xml
+        if: always()
