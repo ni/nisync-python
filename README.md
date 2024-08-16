@@ -1,6 +1,14 @@
-| Info        | Contains a Python API for interacting with NI-Sync. See [GitHub](https://github.com/ni/nisync-python/) for the latest source. |
-| :---------- | :-----------------------------------------------------------------------------------------------------------------------------|
-| Author      | National Instruments |
+| Info      | Contains a Python API for interacting with NI-Sync. See [GitHub](https://github.com/ni/nisync-python/) for the latest source. | 
+| :-------- | :---------------------| 
+| Author    | National Instruments  | 
+
+# Table of Contents
+- [About](#about)
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Documentation](#documentation)
+- [License](#license)
 
 # About
 
