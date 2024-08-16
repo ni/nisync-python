@@ -42,8 +42,6 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v3
-      - name: Set Up simulated device
-        run: C:\nisimdev\nisimdev.exe create -S true -V "National Instruments" -M ${{ env.SIMULATED_DEVICE_MODEL }} -l "PXI1" -s 2 -a ${{ env.SIMULATED_DEVICE_ALIAS }}
       - name: Install dependencies
         run: poetry install
       - name: Run acceptance tests
