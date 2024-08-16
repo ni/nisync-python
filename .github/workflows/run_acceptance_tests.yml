@@ -2,24 +2,7 @@ name: Run acceptance tests
 
 on:
   workflow_call:
-    inputs:
-      simulated_device_model:
-        description: 'The model of the simulated device'
-        required: false
-        default: 'NI PXIe-6674T'
-      simulated_device_alias:
-        description: 'The alias of the simulated device'
-        required: false
-        default: '6674T'
   workflow_dispatch:
-      simulated_device_model:
-        description: 'The model of the simulated device'
-        required: false
-        default: 'NI PXIe-6674T'
-      simulated_device_alias:
-        description: 'The alias of the simulated device'
-        required: false
-        default: '6674T'
 
 jobs:
   run_acceptance_tests:
@@ -36,16 +19,13 @@ jobs:
       # incomplete JUnit XML results.
       fail-fast: false
     timeout-minutes: 90
-    env:
-      SIMULATED_DEVICE_MODEL: ${{ matrix.simulated_device_model }}
-      SIMULATED_DEVICE_ALIAS: ${{ matrix.simulated_device_alias }}
     steps:
       - name: Check out repo
         uses: actions/checkout@v3
       - name: Install dependencies
         run: poetry install
-      - name: Run acceptance tests
-        run: poetry run pytest --resource_name=${{ env.SIMULATED_DEVICE_ALIAS }} --junitxml=test_results/acceptance-${{ matrix.configuration }}.xml
+      - name: Run acceptance tests for PXIe-6674T
+        run: poetry run pytest --resource_name="6674T" --junitxml=test_results/acceptance-${{ matrix.configuration }}.xml
       - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
