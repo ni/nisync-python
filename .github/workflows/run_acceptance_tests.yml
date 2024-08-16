@@ -48,9 +48,6 @@ jobs:
         run: poetry install
       - name: Run acceptance tests
         run: poetry run pytest --resource_name=${{ env.SIMULATED_DEVICE_ALIAS }} --junitxml=test_results/acceptance-${{ matrix.configuration }}.xml
-      - name: Rename test results
-        run: Get-ChildItem test_results/*.xml | Rename-Item -NewName { $_.Name -replace '.xml','-${{ matrix.configuration }}.xml' }
-        if: always() && runner.os == 'Windows'
       - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
