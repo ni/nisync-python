@@ -1,19 +1,43 @@
+| Info      | Contains a Python API for interacting with NI-Sync. See [GitHub](https://github.com/ni/nisync-python/) for the latest source. | 
+| :-------- | :---------------------| 
+| Author    | National Instruments  | 
+
+# Table of Contents
+- [About](#about)
+- [Documentation](#documentation)
+- [Implementation](#implementation)
+- [Supported NI-Sync Driver Versions](#supported-ni-sync-driver-versions)
+- [Operating System Support](#operating-system-support)
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [License](#license)
+
 # About
 
-The **nisync** package contains an API (Application Programming Interface)
-for interacting with the NI-Sync driver. The package is implemented in Python.
-The package is implemented as a complex,
-highly object-oriented wrapper around the NI-Sync C API using the
+The **nisync** package allows you to configure all aspects of timing 
+and synchronization for both time-based and signal-based timing and 
+synchronization modules with NI-Sync devices in Python.
+
+# Documentation
+
+Refer to the [NI-Sync User Manual](https://www.ni.com/docs/en-US/bundle/ni-sync/page/user-manual-welcome.html)
+for API-agnostic information about NI-Sync concepts.
+
+# Implementation
+
+The package is implemented in Python as an 
+object-oriented wrapper around the NI-Sync C API using the
 [ctypes](https://docs.python.org/2/library/ctypes.html) Python library.
 
-**nisync** supports all versions of the NI-Sync driver that ships with the C
-API. The C API is included in any version of the driver that supports it. The
-**nisync** package does not require installation of the C header files.
+# Supported NI-Sync Driver Versions
 
-Some functions in the **nisync** package may be unavailable with earlier
-versions of the NI-Sync driver. Visit the
-[ni.com/downloads](http://www.ni.com/downloads/) to upgrade your version of
-NI-Sync.
+**nisync** supports all versions of NI-Sync. Some functions in the **nisync** 
+package may be unavailable with earlier versions of NI-Sync driver. Refer to 
+the [Installation](#installation) section for details on how to install the latest version 
+of the NI-Sync driver.
+
+# Operating System Support
 
 **nisync** supports Windows and Linux operating systems where the NI-Sync
 driver is supported. Refer to
@@ -60,12 +84,6 @@ with nisync.Session(resource_name="PXI1Slot10") as session:
     # Once operations are complete, disconnect the terminals
     session.disconnect_clock_terminals(OSCILLATOR, PXI_CLK10_IN)
 ```
-
-
-# Documentation
-
-Refer to the [NI-Sync Help](https://www.ni.com/docs/en-US/bundle/ni-sync/page/user-manual-welcome.html)
-for API-agnostic information about NI-Sync concepts.
 
 # License
 
