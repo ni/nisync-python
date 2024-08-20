@@ -11,13 +11,13 @@
 - [Installation](#installation)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
+  - [Python Examples](#python-examples)
 - [License](#license)
 
 # About
 
-The **nisync** package allows you to configure all aspects of timing 
-and synchronization for both time-based and signal-based timing and 
-synchronization modules with NI-Sync devices in Python.
+The **nisync** package allows you to develop timing and synchronization applications 
+for both time-based and signal-based synchronizations with NI-Sync devices in Python.
 
 # Documentation
 
@@ -68,6 +68,8 @@ You can use **NI MAX** or **NI Hardware Configuration Utility** to verify and co
 
 # Usage
 The following is a basic example of using an **nisync.nisync.Session** object. This example illustrates how to connect and disconnect clock terminals to synchronize devices using the onboard oscillator as the clock source. This is particularly useful in applications requiring precise timing and synchronization across multiple devices.
+
+## Python Examples
 
 ```python
 import nisync
