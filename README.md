@@ -77,11 +77,7 @@ You can use **NI MAX** or **NI Hardware Configuration Utility** to verify and co
 
 Finding and configuring device name in **NI MAX**:
 
-![NI MAX Device Name](https://github.com/wchung-ni/wk_nisync-python/blob/2a158411bbf57d6e51bbdd7d8803205797d9f6e1/docs/img/max_device_name.png)
-
 Finding and configuring device name in **NI Hardware Configuration Utility**:
-
-![NI HWCU Device Name](https://github.com/wchung-ni/wk_nisync-python/blob/2a158411bbf57d6e51bbdd7d8803205797d9f6e1/docs/img/hwcu_device_name.png)
 
 # Usage
 The following is a basic example of using an **nisync.nisync.Session** object. This example illustrates how to connect and disconnect clock terminals to synchronize devices using the onboard oscillator as the clock source. This is particularly useful in applications requiring precise timing and synchronization across multiple devices.
