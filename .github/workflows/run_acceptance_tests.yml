@@ -1,0 +1,34 @@
+name: Run acceptance tests
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  run_acceptance_tests:
+    name: Run acceptance tests
+    runs-on:
+      - self-hosted
+      - windows
+      - x64
+      - rdss-nisyncbot-${{ matrix.configuration }}
+    strategy:
+      matrix:
+        configuration: ["win-10-py32", "win-10-py64"]
+      # Fail-fast skews the pass/fail ratio and seems to make pytest produce
+      # incomplete JUnit XML results.
+      fail-fast: false
+    timeout-minutes: 90
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: poetry install
+      - name: Run acceptance tests for PXIe-6674T
+        run: poetry run pytest --resource_name="6674T" --junitxml=test_results/acceptance-${{ matrix.configuration }}.xml
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: test_results_acceptance_${{ matrix.configuration }}
+          path: test_results/*.xml
+        if: always()
