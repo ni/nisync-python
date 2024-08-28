@@ -76,10 +76,10 @@ installed on your system. Both physical and simulated devices are supported.
 You can use **NI MAX** or **NI Hardware Configuration Utility** to verify and configure your devices.
 
 Finding and configuring device name in **NI MAX**:
-![NI Max Device Name](https://github.com/ni/nisync-python/blob/a3b91643a1e110fbc3a6bc9c5dc517f74c13ee80/docs/img/max_device_name.png)
+![NI Max Device Name](https://raw.githubusercontent.com/ni/nisync-python/a3b91643a1e110fbc3a6bc9c5dc517f74c13ee80/docs/img/max_device_name.png)
 
 Finding and configuring device name in **NI Hardware Configuration Utility**:
-![NI HWCU Device Name](https://github.com/ni/nisync-python/blob/a3b91643a1e110fbc3a6bc9c5dc517f74c13ee80/docs/img/hwcu_device_name.png)
+![NI HWCU Device Name](https://raw.githubusercontent.com/ni/nisync-python/a3b91643a1e110fbc3a6bc9c5dc517f74c13ee80/docs/img/hwcu_device_name.png)
 
 
 # Usage
