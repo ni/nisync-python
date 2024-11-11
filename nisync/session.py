@@ -16,7 +16,6 @@ from nisync import errors
 # we use TAI time in the driver and we want to keep
 # this driver api free of leap seconds,
 # so we don't use a timezone here
-# testing
 tai_epoch_no_tz = datetime(year=1970, month=1, day=1)
 
 
