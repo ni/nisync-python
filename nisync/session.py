@@ -864,6 +864,9 @@ class Session(_SessionBase):
     def resource_name(self):
         return self._resource_name
 
+    @property
+    def session_handle(self):
+        return _visatype.ViSession(self._vi)
 
 class TimeReference(object):
     def __init__(self, session):
