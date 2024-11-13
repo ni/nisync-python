@@ -866,7 +866,7 @@ class Session(_SessionBase):
 
     @property
     def session_handle(self):
-        return _visatype.ViSession(self._vi)
+        return self._vi
 
 
 class TimeReference(object):
