@@ -194,6 +194,7 @@ def test___session___disconnect_clock_terminals___succeeds(lib_mock):
     ]
     assert lib_mock.mock_calls == expected_calls
 
+
 def test___session___compare_session_handle___succeeds(lib_mock):
     session = nisync.Session(RESOURCE_NAME)
     assert session.session_handle == SESSION_HANDLE.value
