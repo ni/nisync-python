@@ -20,6 +20,7 @@
 
 The **nisync** package allows you to develop timing and synchronization applications 
 for both time-based and signal-based synchronizations with NI-Sync devices in Python.
+NI created and supports this package.
 
 ## Documentation
 
