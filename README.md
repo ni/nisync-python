@@ -1,4 +1,4 @@
-| **Info**      | Contains a Python API for interacting with NI-Sync. See [GitHub](https://github.com/ni/nisync-python/) for the latest source. | 
+| **Info**      | NI-Sync Python API    | 
 | :------------ | :---------------------| 
 | **Author**    | National Instruments  | 
 
