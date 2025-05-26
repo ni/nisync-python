@@ -50,7 +50,7 @@ system.
 
 ## Python Version Support
 
-**nisync** supports CPython 3.8+ and PyPy3.
+**nisync** supports CPython 3.9+ and PyPy3.
 
 # Installation
  

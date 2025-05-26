@@ -15,7 +15,6 @@ classifiers = [
     "Operating System :: Microsoft :: Windows",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -27,7 +26,7 @@ classifiers = [
 include = ["nisync/*"]
 
 [tool.poetry.dependencies]
-python = "^3.8.1"
+python = "^3.9"
 hightime = "*"
 
 [tool.poetry.group.dev.dependencies]
