@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 90
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Install dependencies
         run: poetry install
       - name: Run acceptance tests for PXIe-6674T
