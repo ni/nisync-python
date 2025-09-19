@@ -10,11 +10,11 @@ jobs:
       - ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
       - name: Set up Python
-        uses: ni/python-actions/setup-python@v0.1.0
+        uses: ni/python-actions/setup-python@8554e7ef74e95c9762962205f45a1e10c48de671 # v0.5.1
       - name: Set up Poetry
-        uses: ni/python-actions/setup-poetry@v0.1.0
+        uses: ni/python-actions/setup-poetry@8554e7ef74e95c9762962205f45a1e10c48de671 # v0.5.1
       - name: Check Poetry version
         run: poetry --version
       - name: Install dependencies
