@@ -17,13 +17,13 @@ jobs:
       fail-fast: false
     steps:
       - name: Check out repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
       - name: Set up Python ${{ matrix.python-version }}
-        uses: ni/python-actions/setup-python@v0.1.0
+        uses: ni/python-actions/setup-python@1b90235a5fcc5e52f0e39e8d2ae9e91d3e3903f2 # v0.6.0
         with:
           python-version: ${{ matrix.python-version }}
       - name: Set up Poetry
-        uses: ni/python-actions/setup-poetry@v0.1.0
+        uses: ni/python-actions/setup-poetry@1b90235a5fcc5e52f0e39e8d2ae9e91d3e3903f2 # v0.6.0
       - name: Check Poetry version
         run: poetry --version
       - name: Install main package dependencies
@@ -35,7 +35,7 @@ jobs:
       - name: Run unit tests
         run: poetry run pytest -v --junitxml=test_results/unit-${{ matrix.os }}-py${{ matrix.python-version }}.xml
       - name: Upload test results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: test_results_unit_${{ matrix.os }}_py${{ matrix.python-version }}
           path: test_results/*.xml
