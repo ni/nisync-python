@@ -21,13 +21,13 @@ jobs:
     timeout-minutes: 90
     steps:
       - name: Check out repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       - name: Install dependencies
         run: poetry install
       - name: Run acceptance tests for PXIe-6674T
         run: poetry run pytest --resource_name="6674T" --junitxml=test_results/acceptance-${{ matrix.configuration }}.xml
       - name: Upload test results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: test_results_acceptance_${{ matrix.configuration }}
           path: test_results/*.xml
