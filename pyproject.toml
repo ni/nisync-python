@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nisync"
-version = "0.2"
+version = "0.2.1"
 description = "NI-Sync Python API"
 authors = ["NI <opensource@ni.com>"]
 maintainers = ["NI <opensource@ni.com>"]
