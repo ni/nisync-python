@@ -77,10 +77,10 @@ installed on your system. Both physical and simulated devices are supported.
 You can use **NI MAX** or **NI Hardware Manager** to verify and configure your devices.
 
 Finding and configuring device name in **NI MAX**:
-![NI Max Device Name](docs/img/max_device_name.png)
+![NI Max Device Name](https://raw.githubusercontent.com/ni/nisync-python/7996ccf739b79eb5d6482c4647a45517b65f8128/docs/img/max_device_name.png)
 
 Finding and configuring device name in **NI Hardware Manager**:
-![NI Hardware Manager Device Name](docs/img/hwcu_device_name.png)
+![NI Hardware Manager Device Name](https://raw.githubusercontent.com/ni/nisync-python/7996ccf739b79eb5d6482c4647a45517b65f8128/docs/img/hardware_manager_device_name.png)
 
 
 # Usage
