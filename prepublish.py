@@ -3,9 +3,9 @@
 
 import json
 import os
-import re
 import subprocess
 import sys
+import tomllib
 from pathlib import Path
 from urllib.request import urlopen
 
@@ -16,19 +16,13 @@ VENV_DIR = ROOT_DIR / ".venv"
 
 def get_project_metadata(key: str) -> str:
     """Read a value from the Poetry project section in pyproject.toml."""
-    content = (ROOT_DIR / "pyproject.toml").read_text(encoding="utf-8")
-    # Use tomllib once Python 3.10 and below are no longer supported; it is built in from 3.11,
-    # or can alternatively import tomli as tomllib since poetry (black and pytest) already pulls it.
-    section = re.search(r"(?ms)^\[tool\.poetry\]\s*(.*?)(?=^\[|\Z)", content)
-    if section is None:
-        raise ValueError("Could not find the [tool.poetry] section in pyproject.toml")
-
-    match = re.search(
-        rf"""(?m)^{re.escape(key)}\s*=\s*["']([^"']+)["']\s*(?:#.*)?$""", section.group(1)
-    )
-    if match is None:
-        raise ValueError(f"Could not find the project {key} in [tool.poetry]")
-    return match.group(1)
+    try:
+        with (ROOT_DIR / "pyproject.toml").open("rb") as pyproject_file:
+            metadata = tomllib.load(pyproject_file)
+        value = metadata["tool"]["poetry"][key]
+    except (KeyError, TypeError) as error:
+        raise ValueError(f"Could not find the project {key} in [tool.poetry]") from error
+    return value
 
 
 def get_project_name() -> str:
