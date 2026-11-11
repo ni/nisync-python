@@ -6,13 +6,18 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: 
+    runs-on:
       - ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
     steps:
       - name: Check out repo
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Set up Python
         uses: ni/python-actions/setup-python@9768589f3e50672173dad75a6fc181e4a85d33fa # v0.7.0
+        with:
+          python-version: ${{ matrix.python-version }}
       - name: Set up Poetry
         uses: ni/python-actions/setup-poetry@9768589f3e50672173dad75a6fc181e4a85d33fa # v0.7.0
       - name: Check Poetry version
