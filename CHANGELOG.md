@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 ## 0.2.2
 * ### Merged Pull Requests
     [Update to Hardware Manager references and device screenshots](https://github.com/ni/nisync-python/pull/76)
+    [Update minimum supported python version to 3.11](https://github.com/ni/nisync-python/pull/77)
 ## 0.2.1
 * ### Resolved issue
     [68: DriverNotInstalledError mentions the wrong driver](https://github.com/ni/nisync-python/issues/68)
