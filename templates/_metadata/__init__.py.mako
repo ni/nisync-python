@@ -1,5 +1,5 @@
 # This file was generated
 
-from .attributes import attributes
-from .constants import constants
-from .functions import functions
+from _metadata.attributes import attributes
+from _metadata.constants import constants
+from _metadata.functions import functions
