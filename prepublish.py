@@ -6,20 +6,29 @@ import os
 import subprocess
 import sys
 import tomllib
+from functools import cache
 from pathlib import Path
+from typing import Any
 from urllib.request import urlopen
 
 
+# @todo Configure a pipeline to publish the package automatically after version checks, refer to:
+#       https://github.com/ni/nisyscfg-python/blob/main/.github/workflows/publish.yml
 ROOT_DIR = Path(__file__).resolve().parent
 VENV_DIR = ROOT_DIR / ".venv"
+
+
+@cache
+def _load_project_metadata() -> dict[str, Any]:
+    """Load project metadata from pyproject.toml."""
+    with (ROOT_DIR / "pyproject.toml").open("rb") as pyproject_file:
+        return tomllib.load(pyproject_file)
 
 
 def get_project_metadata(key: str) -> str:
     """Read a value from the Poetry project section in pyproject.toml."""
     try:
-        with (ROOT_DIR / "pyproject.toml").open("rb") as pyproject_file:
-            metadata = tomllib.load(pyproject_file)
-        value = metadata["tool"]["poetry"][key]
+        value = _load_project_metadata()["tool"]["poetry"][key]
     except (KeyError, TypeError) as error:
         raise ValueError(f"Could not find the project {key} in [tool.poetry]") from error
     return value
@@ -69,7 +78,7 @@ def prepare_virtual_environment() -> None:
     subprocess.run([str(venv_python), "-m", "build"], cwd=ROOT_DIR, check=True)
 
 
-def print_publish_instructions() -> None:
+def print_publish_instructions(project_name: str, project_version: str) -> None:
     """Show how to activate .venv if needed and upload the built distributions."""
     if Path(sys.prefix).resolve() != VENV_DIR.resolve():
         print()
@@ -81,7 +90,7 @@ def print_publish_instructions() -> None:
             print("  source .venv/bin/activate")
 
     print("Publish with:")
-    print("  python -m twine upload dist/*")
+    print(f"  python -m twine upload dist/{project_name}-{project_version}* --verbose")
 
 
 def main() -> int:
@@ -106,7 +115,7 @@ def main() -> int:
         print(f"Unable to prepare the publishing environment: {error}", file=sys.stderr)
         return 1
 
-    print_publish_instructions()
+    print_publish_instructions(project_name, project_version)
     return 0
 
 
